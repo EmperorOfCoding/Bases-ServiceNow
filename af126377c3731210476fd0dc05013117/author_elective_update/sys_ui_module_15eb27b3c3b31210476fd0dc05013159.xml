@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Base Registration">11eb27b3c3b31210476fd0dc05013156</application>
+        <filter/>
+        <name>Registrations</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_1584301_bases.registration_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 19:22:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>15eb27b3c3b31210476fd0dc05013159</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Registrations</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_ui_module_15eb27b3c3b31210476fd0dc05013159</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 19:22:09</sys_updated_on>
+        <table>x_1584301_bases_registration</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases ">af126377c3731210476fd0dc05013117</application>
+        <file_path/>
+        <instance_id>56b236671bb08e58c82acb7b234bcba2</instance_id>
+        <instance_name>dev242599</instance_name>
+        <name>sys_ui_module_15eb27b3c3b31210476fd0dc05013159</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Base Registration">11eb27b3c3b31210476fd0dc05013156</application><filter/><name>Registrations</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_1584301_bases.registration_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-25 19:22:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>15eb27b3c3b31210476fd0dc05013159</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Registrations</sys_name><sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package><sys_policy/><sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope><sys_update_name>sys_ui_module_15eb27b3c3b31210476fd0dc05013159</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-25 19:22:09</sys_updated_on><table>x_1584301_bases_registration</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-1315834800</payload_hash>
+        <record_name>Registrations</record_name>
+        <reverted_from/>
+        <source>ab126377c3731210476fd0dc0501311c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 19:22:09</sys_created_on>
+        <sys_id>a5eb27b3c3b31210476fd0dc0501315c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1953e8f3d080000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 19:22:09</sys_updated_on>
+        <type>Module</type>
+        <update_guid>a9eb27b3e4b31210b268eab7496c9c5b</update_guid>
+        <update_guid_history>a9eb27b3e4b31210b268eab7496c9c5b:-1315834800</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 19:56:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>09f86d97713e42bc81dbab744af04f10</sys_id>
+        <sys_metadata>15eb27b3c3b31210476fd0dc05013159</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Registrations</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_scope_delete display_value="">0c7f6c8abc044a02b5c722e0c83c7884</sys_scope_delete>
+        <sys_update_name>sys_ui_module_15eb27b3c3b31210476fd0dc05013159</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_15eb27b3c3b31210476fd0dc05013159">a5eb27b3c3b31210476fd0dc0501315c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 19:56:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

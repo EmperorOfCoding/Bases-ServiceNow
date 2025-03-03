@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1584301_bases.basesUtilss</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>basesUtilss</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var basesUtilss = Class.create();
+basesUtilss.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    initialize: function() {
+    },
+
+	userHasActiveSubscription: function () {
+
+		if (this._userAlreadyRegistered()) {
+			
+			return "sys_id=00000000000000000000000000000000";
+		}
+
+		return this._getNonFullBases();
+
+    },
+
+	_userAlreadyRegistered: function () {
+
+		var userSysId = gs.getUserID();
+		var gr = new GlideRecord("x_1584301_bases_users");
+		gr.addQuery('opened_by', userSysId);
+		gr.addQuery('state', '!=', '4');
+		gr.query();
+
+		if (gr.next()) {
+			return true;
+		}
+
+		return false;
+
+	},
+
+	_getNonFullBases: function () {
+
+		var baseGR = new GlideRecord("x_1584301_bases_registrations");
+		baseGR.query();
+
+		var availableBases = [];
+
+		while (baseGR.next()) {
+
+			var maxCapacity = parseInt(baseGR.getValue('max_capacity'), 10) || 0;
+
+			var countGR = new GlideRecord("x_1584301_bases_users");
+			countGR.addQuery('base', baseGR.sys_id);
+			countGR.addQuery('state', '!=', '4');
+			countGR.query();
+			var numRegistered = countGR.getRowCount();
+
+			if (numRegistered < maxCapacity) {
+
+				availableBases.push(baseGR.getUniqueValue());
+
+			}
+
+		}
+
+		if (availableBases.length === 0) {
+			return "sys_id=00000000000000000000000000000000";
+		}
+		
+		return "sys_idIN" + availableBases.join(',');
+	},
+
+	getAvailableManagers: function () {
+
+		var managerRoleUsers = this._getUsersWithRole("x_1584301_bases.manager");
+		var busyManagers = this._getManagersInBases(); 
+
+		var allowedManagers = [];
+
+		for (var i = 0; i < managerRoleUsers.length; i++) {
+
+			var candidate = managerRoleUsers[i];
+
+			if (busyManagers.indexOf(candidate) == -1) {
+				allowedManagers.push(candidate);
+			}
+		}
+
+		if (allowedManagers.length === 0) {
+			return "sys_id=00000000000000000000000000000000";
+		}
+
+		return 'sys_idIN' + allowedManagers.join(',');
+	},
+
+	_getUsersWithRole: function (roleName) {
+
+		var users = [];
+		var gr = new GlideRecord("sys_user_has_role");
+		gr.addQuery('role.name', roleName);
+		gr.query();
+
+		while (gr.next()) {
+			users.push(gr.user.toString());
+		}
+		return users;
+	},
+
+	_getManagersInBases: function () {
+
+		var mgrs = [];
+		var baseGR = new GlideRecord("x_1584301_bases_registrations");
+		baseGR.addNotNullQuery('manager');
+		baseGR.query();
+
+		while (baseGR.next()) {
+			mgrs.push(baseGR.manager.toString());
+		}
+		return mgrs;
+
+	},
+
+    type: 'basesUtilss'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 19:01:01</sys_created_on>
+        <sys_id>47797d24c3c42210476fd0dc050131ba</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>basesUtilss</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_script_include_47797d24c3c42210476fd0dc050131ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 21:02:26</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>47797d24c3c42210476fd0dc050131ba</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 19:01:00</sys_created_on>
+        <sys_id>cf3ab1a4c3c42210476fd0dc05013167</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 19:01:00</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

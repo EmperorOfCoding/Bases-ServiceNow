@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>Registrations</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_1584301_bases_registration</name>
+        <number_ref display_value="BASE">bdeb27b3c3b31210476fd0dc050131a1</number_ref>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Task" name="task">3dd4f158190312104f3423cebaaa8529</super_class>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 19:22:09</sys_created_on>
+        <sys_id>d99b6f73c3b31210476fd0dc0501319d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Registrations</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_db_object_d99b6f73c3b31210476fd0dc0501319d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 19:54:07</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_1584301_bases.user" name="x_1584301_bases.user">da62e7b7c3731210476fd0dc0501311d</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases ">af126377c3731210476fd0dc05013117</application>
+        <file_path/>
+        <instance_id>56b236671bb08e58c82acb7b234bcba2</instance_id>
+        <instance_name>dev242599</instance_name>
+        <name>sys_db_object_d99b6f73c3b31210476fd0dc0501319d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><is_extendable>false</is_extendable><label>Registrations</label><live_feed_enabled>false</live_feed_enabled><name>x_1584301_bases_registration</name><number_ref display_value="BASE">bdeb27b3c3b31210476fd0dc050131a1</number_ref><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Task" name="task">3dd4f158190312104f3423cebaaa8529</super_class><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-25 19:22:09</sys_created_on><sys_id>d99b6f73c3b31210476fd0dc0501319d</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Registrations</sys_name><sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package><sys_policy/><sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope><sys_update_name>sys_db_object_d99b6f73c3b31210476fd0dc0501319d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-25 19:54:07</sys_updated_on><update_access>false</update_access><user_role display_value="x_1584301_bases.user" name="x_1584301_bases.user">da62e7b7c3731210476fd0dc0501311d</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>-1864355678</payload_hash>
+        <record_name>Registrations</record_name>
+        <reverted_from/>
+        <source>ab126377c3731210476fd0dc0501311c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 19:54:08</sys_created_on>
+        <sys_id>4233b37fc3b31210476fd0dc050131a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1953eac86120000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 19:54:08</sys_updated_on>
+        <type>Table</type>
+        <update_guid>0a33b37f19b31210479a49c57fe02aa4</update_guid>
+        <update_guid_history>0a33b37f19b31210479a49c57fe02aa4:-1864355678,dad07b7b86b3121074c666b60fd0306c:953976982,dad07b7b86b3121074c666b60fd0306c:953976982,bdeb27b332b31210ff0a3a7c706668a6:-1896895666,75eb27b316b3121000fa300fbf6fa7a0:-1760370459</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 19:56:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>7aea1a8282554460bb81a4abb6c320a4</sys_id>
+        <sys_metadata>d99b6f73c3b31210476fd0dc0501319d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Registrations</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_scope_delete display_value="">0c7f6c8abc044a02b5c722e0c83c7884</sys_scope_delete>
+        <sys_update_name>sys_db_object_d99b6f73c3b31210476fd0dc0501319d</sys_update_name>
+        <sys_update_version display_value="sys_db_object_d99b6f73c3b31210476fd0dc0501319d">4233b37fc3b31210476fd0dc050131a5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 19:56:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

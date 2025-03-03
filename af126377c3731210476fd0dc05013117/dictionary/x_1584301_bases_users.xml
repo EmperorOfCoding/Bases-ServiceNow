@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="399eeb77c3b31210476fd0dc0501310d" extends="task" label="Workers" max_length="40" name="x_1584301_bases_users" type="collection">
+        <element label="Function" max_length="32" name="function" reference="x_1584301_bases_functions" type="reference"/>
+        <element label="Base" max_length="32" name="base" reference="x_1584301_bases_registrations" type="reference"/>
+    </element>
+</database>

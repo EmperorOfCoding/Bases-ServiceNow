@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1584301_bases_registrations" version="2" view="default_bases">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_1584301_bases_registrations" element="NULL" name="x_1584301_bases_registrations" parent="NULL" relationship="NULL" sys_domain="global" view="9a2dc569c3402210476fd0dc05013113">68adc969c3402210476fd0dc05013159</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 18:20:03</sys_created_on>
+            <sys_id>a4adc969c3402210476fd0dc0501315a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 18:20:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>city</element>
+            <list_id display_value="x_1584301_bases_registrations" element="NULL" name="x_1584301_bases_registrations" parent="NULL" relationship="NULL" sys_domain="global" view="9a2dc569c3402210476fd0dc05013113">68adc969c3402210476fd0dc05013159</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 18:20:03</sys_created_on>
+            <sys_id>28adc969c3402210476fd0dc0501315a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 18:20:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>city_state</element>
+            <list_id display_value="x_1584301_bases_registrations" element="NULL" name="x_1584301_bases_registrations" parent="NULL" relationship="NULL" sys_domain="global" view="9a2dc569c3402210476fd0dc05013113">68adc969c3402210476fd0dc05013159</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 18:20:03</sys_created_on>
+            <sys_id>a8adc969c3402210476fd0dc0501315a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 18:20:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>max_capacity</element>
+            <list_id display_value="x_1584301_bases_registrations" element="NULL" name="x_1584301_bases_registrations" parent="NULL" relationship="NULL" sys_domain="global" view="9a2dc569c3402210476fd0dc05013113">68adc969c3402210476fd0dc05013159</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 18:20:03</sys_created_on>
+            <sys_id>2cadc969c3402210476fd0dc0501315a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 18:20:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>manager</element>
+            <list_id display_value="x_1584301_bases_registrations" element="NULL" name="x_1584301_bases_registrations" parent="NULL" relationship="NULL" sys_domain="global" view="9a2dc569c3402210476fd0dc05013113">68adc969c3402210476fd0dc05013159</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 18:20:03</sys_created_on>
+            <sys_id>acadc969c3402210476fd0dc0501315a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 18:20:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1584301_bases_registrations</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 18:20:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>68adc969c3402210476fd0dc05013159</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1584301_bases_registrations</sys_name>
+            <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+            <sys_update_name>sys_ui_list_x_1584301_bases_registrations_default_bases</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 18:20:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="default bases" name="default_bases">9a2dc569c3402210476fd0dc05013113</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
