@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_filter">
+    <sys_filter action="DELETE">
+        <filter table="x_1584301_bases_registrations">managerDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="manager" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <group display_value="Base Managers" name="Base Managers">e256d384c3002210476fd0dc0501316c</group>
+        <last_used/>
+        <mobile>false</mobile>
+        <roles/>
+        <sys_class_name>sys_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-28 18:19:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d04afabcc38c6210476fd0dc0501316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Base Managers Filter</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_filter_d04afabcc38c6210476fd0dc0501316b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 18:19:12</sys_updated_on>
+        <table>x_1584301_bases_registrations</table>
+        <title>Base Managers Filter</title>
+        <user/>
+    </sys_filter>
+    <sys_translated_text action="DELETE" query="documentkey=d04afabcc38c6210476fd0dc0501316b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases ">af126377c3731210476fd0dc05013117</application>
+        <file_path/>
+        <instance_id>56b236671bb08e58c82acb7b234bcba2</instance_id>
+        <instance_name>dev242599</instance_name>
+        <name>sys_filter_d04afabcc38c6210476fd0dc0501316b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_filter"><sys_filter action="INSERT_OR_UPDATE"><filter table="x_1584301_bases_registrations">managerDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="manager" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><group display_value="Base Managers" name="Base Managers">e256d384c3002210476fd0dc0501316c</group><last_used/><mobile>false</mobile><roles/><sys_class_name>sys_filter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 18:19:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d04afabcc38c6210476fd0dc0501316b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Base Managers Filter</sys_name><sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package><sys_policy/><sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope><sys_update_name>sys_filter_d04afabcc38c6210476fd0dc0501316b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 18:19:12</sys_updated_on><table>x_1584301_bases_registrations</table><title>Base Managers Filter</title><user/></sys_filter><sys_translated_text action="delete_multiple" query="documentkey=d04afabcc38c6210476fd0dc0501316b"/></record_update>]]></payload>
+        <payload_hash>-230703322</payload_hash>
+        <record_name>Base Managers Filter</record_name>
+        <reverted_from/>
+        <source>ab126377c3731210476fd0dc0501311c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-28 18:19:12</sys_created_on>
+        <sys_id>944afabcc38c6210476fd0dc0501316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1954dc8adb40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 18:19:12</sys_updated_on>
+        <type>Filter</type>
+        <update_guid>984afabca28c62104da0b0c590e3c36d</update_guid>
+        <update_guid_history>984afabca28c62104da0b0c590e3c36d:-230703322</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-28 18:28:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_filter">sys_filter</sys_db_object>
+        <sys_id>9e4162e3b9ef43d4a8bd27598f30d510</sys_id>
+        <sys_metadata>d04afabcc38c6210476fd0dc0501316b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Base Managers Filter</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_parent display_value="Registrations">1eb3bf7fc3b31210476fd0dc05013168</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_scope_delete display_value="">0c7f6c8abc044a02b5c722e0c83c7884</sys_scope_delete>
+        <sys_update_name>sys_filter_d04afabcc38c6210476fd0dc0501316b</sys_update_name>
+        <sys_update_version display_value="sys_filter_d04afabcc38c6210476fd0dc0501316b">944afabcc38c6210476fd0dc0501316e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 18:28:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

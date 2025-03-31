@@ -1,0 +1,1552 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1321035000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Integration with Yahoo Weather.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>bases__yahoo_weather_integration</internal_name>
+        <label_cache>[{"name":"Created_1.current.city_state","label":"Trigger - Record Created➛Registrations Record➛City State","reference":"","reference_display":"City State","type":"string","base_type":"string","parent_table_name":"x_1584301_bases_registrations","column_name":"city_state","usedInstances":{"828669e9-628e-4df2-9112-27aaba7ffcf9":["state"]}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"bbbee629-4813-432a-b5cf-ba4daa4abf3f":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"6ffbc995-0b66-43a1-af32-6810131ebde8"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Registrations Record","reference":"x_1584301_bases_registrations","reference_display":"Registrations","type":"reference","base_type":"reference","usedInstances":{"7f0178f2-985d-40e6-b365-8f1bd331aea6":["record"],"ed66d4c1-a135-4af1-8427-28137b5f1177":["record"],"cf934aad-099f-4d82-a422-2916d99d6506":["record"],"af14f13a-179f-45bc-876c-039cd0d1247e":["record"],"7d500910-2502-4d9a-aaf2-0856af89fb01":["registrations_record"]},"attributes":{}},{"name":"flow_variable.integration_successful","label":"Flow Variables➛Integration Successful","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"98a57aa7-5f56-4329-b5f2-ccb6cb2b7a3b":["condition"],"0f6e4852-ecfe-405b-8af3-220e9ac410de":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"681cb650-7dc7-46f1-b02d-cc1f6ec9902c"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"98a57aa7-5f56-4329-b5f2-ccb6cb2b7a3b":["condition"],"3b1348c7-7881-43ae-9094-e8d536a3e7ed":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c17b4416-2a2e-4669-b468-f35f27686374"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"98a57aa7-5f56-4329-b5f2-ccb6cb2b7a3b":["condition"],"3b1348c7-7881-43ae-9094-e8d536a3e7ed":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b70c1be7-a5eb-4d9a-b362-4ccf0ccb75e2"}},{"name":"Created_1.current.city","label":"Trigger - Record Created➛Registrations Record➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_1584301_bases_registrations","column_name":"city","usedInstances":{"828669e9-628e-4df2-9112-27aaba7ffcf9":["location"]}},{"name":"flow_variable.retry_timeout","label":"Flow Variables➛Retry Timeout","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"957c246e-c987-4d21-8d60-8f96973c7f70":["seconds"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"031a3f44-767b-4726-a958-fc8722d64430"}},{"name":"957c246e-c987-4d21-8d60-8f96973c7f70.duration","label":"5 - Seconds to Duration➛Duration","reference_display":"Duration","type":"glide_duration","base_type":"glide_duration","usedInstances":{"29558925-4c32-4697-a70d-d81ce1386789":["timer_duration"]},"attributes":{"uiType":"glide_duration","uiTypeLabel":"Duration","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b5880247-a923-40b5-ab65-0543d7fd969c"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Registrations Table","reference":"x_1584301_bases_registrations","reference_display":"Registrations","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.state","label":"Trigger - Record Created➛Registrations Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1584301_bases_registrations","column_name":"state","choices":[{"label":"Pending","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Pending","value":"-5","parameters":{"name":"task","dependent_values":[""]}},{"label":"Open","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Open","value":"1","parameters":{"name":"task","dependent_values":[""]}},{"label":"Work in Progress","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Work in Progress","value":"2","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Complete","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Closed Complete","value":"3","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Incomplete","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Closed Incomplete","value":"4","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Skipped","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Closed Skipped","value":"7","parameters":{"name":"task","dependent_values":[""]}}],"usedInstances":{}}]</label_cache>
+        <master_snapshot>7705deb5c3886210476fd0dc05013147</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Bases - Yahoo Weather Integration when Created</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>1015deb5c3886210476fd0dc050131f7</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 12:53:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e56cc139c3046210476fd0dc05013161</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Bases - Yahoo Weather Integration when Created</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_hub_flow_e56cc139c3046210476fd0dc05013161</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:28</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e56cc139c3046210476fd0dc05013161"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e56cc139c3046210476fd0dc05013161"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1584301_bases_registrations">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1015deb5c3886210476fd0dc050131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:38</sys_updated_on>
+        <table>x_1584301_bases_registrations</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>e56cc139c3046210476fd0dc05013161</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 20:50:28</sys_created_on>
+        <sys_id>7f7984b6c3582210476fd0dc050131f1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:28</sys_updated_on>
+        <trigger display_value="">1015deb5c3886210476fd0dc050131f7</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e56cc139c3046210476fd0dc05013161^sys_idNOT IN7f7984b6c3582210476fd0dc050131f1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e56cc139c3046210476fd0dc05013161"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e56cc139c3046210476fd0dc05013161^sys_idNOT INad6cc139c3046210476fd0dc05013163"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e56cc139c3046210476fd0dc05013161</id>
+        <name>Bases - Yahoo Weather Integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 12:53:09</sys_created_on>
+        <sys_id>ad6cc139c3046210476fd0dc05013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 12:53:09</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ad6cc139c3046210476fd0dc05013163"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e56cc139c3046210476fd0dc05013161^sys_idNOT IN36a7d179c3446210476fd0dc05013147,f2a7d179c3446210476fd0dc0501314b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</model>
+        <model_id>e56cc139c3046210476fd0dc05013161</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e56cc139c3046210476fd0dc05013161</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 13:42:23</sys_created_on>
+        <sys_id>36a7d179c3446210476fd0dc05013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 13:42:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=36a7d179c3446210476fd0dc05013147"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</model>
+        <model_id>e56cc139c3046210476fd0dc05013161</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e56cc139c3046210476fd0dc05013161</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 13:42:23</sys_created_on>
+        <sys_id>f2a7d179c3446210476fd0dc0501314b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 13:42:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f2a7d179c3446210476fd0dc0501314b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e56cc139c3046210476fd0dc05013161"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e56cc139c3046210476fd0dc05013161"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e56cc139c3046210476fd0dc05013161^sys_idNOT INfea79579c3446210476fd0dc0501313f"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 13:42:23</sys_created_on>
+        <sys_id>fea79579c3446210476fd0dc0501313f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:26</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VaXW/bNhT9K4KeNiAD9GFbVt66JMUCdO3mpNtDkBGURNrCaMoTKSVekf++S4uSZVlKZDtd7fQlgEnq8p6jc8+liNx9MRkOCDPPzVscMGKemTGXJOWY3S4XBIalGkYcz9XcHPMIyyRdmucyzciZmaQRSc1z+8zMMcvIzVJcR/AQLF09oR839TT8fkT2cDxwLRsFWBCBUjKNhUyxjBMuYF0UiwXDyz/08kljeoFTiCvVnl/McBazKCXcPL+7h7zVxiENse8QK3Rt13EsyxkP7GDkBrYTuZhYFoRo4m0kKltgr1GSR0l4RGAripkgLYykBEefOFtWK2ZAaEHJHD+K+F+IPrbUOkog95AUc9VPpBkohsNZEofk00LhL0aKPIvJhGVz/rHIX3FHKM6YLLmDkUxAPLJQKaskdEb0ZpY8TMoN38d8hU5PsiTErPqFpUzjIJNEKMJpzIB6VHAjkixdZT+5uvg0uUR/vru9+OVqgiZXN7eT64vbq0vzaYUL/ZOpiEWGOhdUwHmqXvj7mDD1AjXjIkzjhXwXyjgnOpmns7VW04xDBFS9jS3VFrxVBH4AEYFKAEFJziokzNMPOuQk40YC7w3+GGGWAjXSKDVBr+d4qimlv5USXFGi1ZPjFKE5EkuBZlmAgLTpFJiK+SKTyPPHvj3CHaL0wg1iVoUCoe9M8/5JvSvCSChriqOfRf3Xr7EQMZ/WSKowKkFuQ6zQgXKNksECqjgtrPcb5acXlbVqWZ2etK2evKGKhgv1MB7bpjQg1LE8hdq23IDalmcNMY1cywqdmvFsb9+Zl2youQ7uOSvSI328aLCjF4lVHbEeVdMktUy+Xsi9JJlv6lnHcdT715Z3cYSpNazb3cm7KyEWw5eNrvgMtFe2fBzlGJ6ISox9LL2HeT/MCEeCSKnKeXf35lAmq2dwsUnN5JTeDUUQTVLjY8J/ul6vM24IGAjkeVI2V7f0PqAhWGq8KdRBImfNRqaQ/gzjG0hVkXa88++otzWKK99kcY/eRgbjoU/d0APM0M3ogATYHjhD7Hsjl/qN3tbYvjuxo+9uPb0k73Sltr7St1bz1pKvOkyjU+1TDg1h6NDuC331+yXloI5eVl9nQ98n2dNo9pQlD6CBPfp8gMO/p2mS8WjL/iGmEXNjvcL4QXP742k5fb3RgQbI83g3V5wOykP62Vo/ZXFivtyrk7nUDnwyIBZ8nLnQyYKh7wchdij1Rh5x7EYnW2/cms3R968ehZK3VVrX51CrCPM27e7wjfbtEzzI17UUW229mDt+k75IeBTLosM2LbqcEuaeFRzWgpev4q+r37frtxh8qYRHI4wj0mVaAa2VcB1WSzKyBeFXKWHrG133FhfSewttnkSEXa7DmRvdQ7H1gLkUSCYIRxGq8dhTmQW27Ttgs/8VAiBOD7pHUKkQlNB6v71MDJgwYBMjpoZGTSIjWBpyRsBcGNgMbGio3U/su7J+2thGXh3D3zTuwpa3bhNgeIXstIAdfFHQKKFDj1gk8vBw6HrtlwV+84jVlsILGR79sWtn/8jb7OjZz+Td4jZjtn4o1+S/qYGe9wJvGPVXOyC2ZHH8p8XNumSqqW513imLI1LOvYI/6Uj52od2dyY69sOh7XU403jY6Ux68+cSky2w/5ezpGpAWjltDvW5mDqufyN4LU3e/weq6KEeviIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e56cc139c3046210476fd0dc05013161"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e56cc139c3046210476fd0dc05013161^sys_idNOT INf97944b6c3582210476fd0dc05013146"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <subflow display_value="Integration Yahoo Weather AOOP">74b58472c3582210476fd0dc05013102</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/41S22rcMBD9laJnr/Fl7XX8VloChbaBtM1LCEKWxrsCWXZ02ex22X/vyHY2Jg0hjzNnNHMuuj8RKUhN8qopqvUm43lRZVmarDdlKxLBkyJJcyxJRDTrACcNbKV1hjnZa0sN8N4IRPdM+QCfTl8MMAeCpjH3xoB25zPiQtpBsePdPIYdvpNKIE7q+4eIDMzgfgeG1KdXkDsOQBVrQOHDW2gBEQ644aPMX94uqH+6fab+vrBwfURf7iIQeKYRgYMDLQB5tExZiEjHtGCuN0dSO+OxgWaIG62Ol4md1G4yoGMHK//i8jyLFvtrcqApSsqTlDbMQuCyYEYWs3R29bW20d1ecrgZQj2dc6xRH9nOe+U7/XMyJSQHLfPKLZLzFi/DEJQHLbOw9teuf7rEcy31aNIMqp4zdamYc0Y23oENaXv5+3+Pp+b3N1IHBR3epR0bBqm3dDD9Xo63kHoXbxUWcav6J+Ro5VbHjAdpMebC4mvsfx3bd8zI4MgPXIOPw8U/Wj56+BZ+1abkmzVcXa3yKherdSOaVVMk7apMkqyoSo4frSTnMQr66IO0yarZFDqZjgOWGzm4z0hhD7P+88M/5IzsOXYDAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 20:50:20</sys_created_on>
+        <sys_id>f97944b6c3582210476fd0dc05013146</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:20</sys_updated_on>
+        <ui_id>7d500910-2502-4d9a-aaf2-0856af89fb01</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e56cc139c3046210476fd0dc05013161"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e56cc139c3046210476fd0dc05013161"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e56cc139c3046210476fd0dc05013161^sys_idNOT IN51055eb5c3886210476fd0dc05013151,59055eb5c3886210476fd0dc0501314a,5d055eb5c3886210476fd0dc0501314d,69055eb5c3886210476fd0dc05013155,d5055eb5c3886210476fd0dc05013141"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=681cb650-7dc7-46f1-b02d-cc1f6ec9902c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_successful</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Successful</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</model>
+        <model_id>e56cc139c3046210476fd0dc05013161</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_e56cc139c3046210476fd0dc05013161</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:27</sys_created_on>
+        <sys_id>51055eb5c3886210476fd0dc05013151</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b70c1be7-a5eb-4d9a-b362-4ccf0ccb75e2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</model>
+        <model_id>e56cc139c3046210476fd0dc05013161</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_e56cc139c3046210476fd0dc05013161</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:26</sys_created_on>
+        <sys_id>59055eb5c3886210476fd0dc0501314a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=031a3f44-767b-4726-a958-fc8722d64430</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</model>
+        <model_id>e56cc139c3046210476fd0dc05013161</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_e56cc139c3046210476fd0dc05013161</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:26</sys_created_on>
+        <sys_id>5d055eb5c3886210476fd0dc0501314d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=c17b4416-2a2e-4669-b468-f35f27686374</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</model>
+        <model_id>e56cc139c3046210476fd0dc05013161</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_e56cc139c3046210476fd0dc05013161</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:27</sys_created_on>
+        <sys_id>69055eb5c3886210476fd0dc05013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=6ffbc995-0b66-43a1-af32-6810131ebde8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</model>
+        <model_id>e56cc139c3046210476fd0dc05013161</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_e56cc139c3046210476fd0dc05013161</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:26</sys_created_on>
+        <sys_id>d5055eb5c3886210476fd0dc05013141</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e56cc139c3046210476fd0dc05013161^sys_idNOT INb2a7d179c3446210476fd0dc0501314d,f2a7d179c3446210476fd0dc0501314a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e56cc139c3046210476fd0dc05013161</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 13:42:23</sys_created_on>
+        <sys_id>b2a7d179c3446210476fd0dc0501314d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 13:42:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e56cc139c3046210476fd0dc05013161</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 13:42:23</sys_created_on>
+        <sys_id>f2a7d179c3446210476fd0dc0501314a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 13:42:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e56cc139c3046210476fd0dc05013161"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e56cc139c3046210476fd0dc05013161"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e56cc139c3046210476fd0dc05013161"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Integration with Yahoo Weather.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>bases__yahoo_weather_integration_when_created</internal_name>
+        <label_cache>[{"name":"Created_1.current.city_state","label":"Trigger - Record Created➛Registrations Record➛City State","reference":"","reference_display":"City State","type":"string","base_type":"string","parent_table_name":"x_1584301_bases_registrations","column_name":"city_state","usedInstances":{"828669e9-628e-4df2-9112-27aaba7ffcf9":["state"]}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"bbbee629-4813-432a-b5cf-ba4daa4abf3f":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"6ffbc995-0b66-43a1-af32-6810131ebde8"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Registrations Record","reference":"x_1584301_bases_registrations","reference_display":"Registrations","type":"reference","base_type":"reference","usedInstances":{"7f0178f2-985d-40e6-b365-8f1bd331aea6":["record"],"ed66d4c1-a135-4af1-8427-28137b5f1177":["record"],"cf934aad-099f-4d82-a422-2916d99d6506":["record"],"af14f13a-179f-45bc-876c-039cd0d1247e":["record"],"7d500910-2502-4d9a-aaf2-0856af89fb01":["registrations_record"]},"attributes":{}},{"name":"flow_variable.integration_successful","label":"Flow Variables➛Integration Successful","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"98a57aa7-5f56-4329-b5f2-ccb6cb2b7a3b":["condition"],"0f6e4852-ecfe-405b-8af3-220e9ac410de":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"681cb650-7dc7-46f1-b02d-cc1f6ec9902c"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"98a57aa7-5f56-4329-b5f2-ccb6cb2b7a3b":["condition"],"3b1348c7-7881-43ae-9094-e8d536a3e7ed":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c17b4416-2a2e-4669-b468-f35f27686374"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"98a57aa7-5f56-4329-b5f2-ccb6cb2b7a3b":["condition"],"3b1348c7-7881-43ae-9094-e8d536a3e7ed":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b70c1be7-a5eb-4d9a-b362-4ccf0ccb75e2"}},{"name":"Created_1.current.city","label":"Trigger - Record Created➛Registrations Record➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_1584301_bases_registrations","column_name":"city","usedInstances":{"828669e9-628e-4df2-9112-27aaba7ffcf9":["location"]}},{"name":"flow_variable.retry_timeout","label":"Flow Variables➛Retry Timeout","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"957c246e-c987-4d21-8d60-8f96973c7f70":["seconds"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"031a3f44-767b-4726-a958-fc8722d64430"}},{"name":"957c246e-c987-4d21-8d60-8f96973c7f70.duration","label":"5 - Seconds to Duration➛Duration","reference_display":"Duration","type":"glide_duration","base_type":"glide_duration","usedInstances":{"29558925-4c32-4697-a70d-d81ce1386789":["timer_duration"]},"attributes":{"uiType":"glide_duration","uiTypeLabel":"Duration","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b5880247-a923-40b5-ab65-0543d7fd969c"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Registrations Table","reference":"x_1584301_bases_registrations","reference_display":"Registrations","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.state","label":"Trigger - Record Created➛Registrations Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1584301_bases_registrations","column_name":"state","choices":[{"label":"Pending","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Pending","value":"-5","parameters":{"name":"task","dependent_values":[""]}},{"label":"Open","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Open","value":"1","parameters":{"name":"task","dependent_values":[""]}},{"label":"Work in Progress","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Work in Progress","value":"2","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Complete","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Closed Complete","value":"3","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Incomplete","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Closed Incomplete","value":"4","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Skipped","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Closed Skipped","value":"7","parameters":{"name":"task","dependent_values":[""]}}],"usedInstances":{}}]</label_cache>
+        <master>true</master>
+        <name>Bases - Yahoo Weather Integration when Created</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Bases - Yahoo Weather Integration when Created">e56cc139c3046210476fd0dc05013161</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7705deb5c3886210476fd0dc05013147</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:27</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7705deb5c3886210476fd0dc05013147"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7705deb5c3886210476fd0dc05013147"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7705deb5c3886210476fd0dc05013147"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7705deb5c3886210476fd0dc05013147^sys_idNOT IN3f05deb5c3886210476fd0dc05013148"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7705deb5c3886210476fd0dc05013147</id>
+        <name>Bases - Yahoo Weather Integration when Created</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:36</sys_created_on>
+        <sys_id>3f05deb5c3886210476fd0dc05013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3f05deb5c3886210476fd0dc05013148"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7705deb5c3886210476fd0dc05013147^sys_idNOT IN3305deb5c3886210476fd0dc0501314a,7f05deb5c3886210476fd0dc05013168"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">7705deb5c3886210476fd0dc05013147</model>
+        <model_id>7705deb5c3886210476fd0dc05013147</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7705deb5c3886210476fd0dc05013147</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:36</sys_created_on>
+        <sys_id>3305deb5c3886210476fd0dc0501314a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3305deb5c3886210476fd0dc0501314a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">7705deb5c3886210476fd0dc05013147</model>
+        <model_id>7705deb5c3886210476fd0dc05013147</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7705deb5c3886210476fd0dc05013147</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:36</sys_created_on>
+        <sys_id>7f05deb5c3886210476fd0dc05013168</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7f05deb5c3886210476fd0dc05013168"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7705deb5c3886210476fd0dc05013147"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7705deb5c3886210476fd0dc05013147"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=7705deb5c3886210476fd0dc05013147^sys_idNOT IN4415deb5c3886210476fd0dc050131be"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration when Created">7705deb5c3886210476fd0dc05013147</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:37</sys_created_on>
+        <sys_id>4415deb5c3886210476fd0dc050131be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:37</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VaXW/bNhT9K4KeNiAD9GFbVt66JMUCdO3mpNtDkBGURNrCaMoTKSVekf++S4uSZVlKZDtd7fQlgEnq8p6jc8+liNx9MRkOCDPPzVscMGKemTGXJOWY3S4XBIalGkYcz9XcHPMIyyRdmucyzciZmaQRSc1z+8zMMcvIzVJcR/AQLF09oR839TT8fkT2cDxwLRsFWBCBUjKNhUyxjBMuYF0UiwXDyz/08kljeoFTiCvVnl/McBazKCXcPL+7h7zVxiENse8QK3Rt13EsyxkP7GDkBrYTuZhYFoRo4m0kKltgr1GSR0l4RGAripkgLYykBEefOFtWK2ZAaEHJHD+K+F+IPrbUOkog95AUc9VPpBkohsNZEofk00LhL0aKPIvJhGVz/rHIX3FHKM6YLLmDkUxAPLJQKaskdEb0ZpY8TMoN38d8hU5PsiTErPqFpUzjIJNEKMJpzIB6VHAjkixdZT+5uvg0uUR/vru9+OVqgiZXN7eT64vbq0vzaYUL/ZOpiEWGOhdUwHmqXvj7mDD1AjXjIkzjhXwXyjgnOpmns7VW04xDBFS9jS3VFrxVBH4AEYFKAEFJziokzNMPOuQk40YC7w3+GGGWAjXSKDVBr+d4qimlv5USXFGi1ZPjFKE5EkuBZlmAgLTpFJiK+SKTyPPHvj3CHaL0wg1iVoUCoe9M8/5JvSvCSChriqOfRf3Xr7EQMZ/WSKowKkFuQ6zQgXKNksECqjgtrPcb5acXlbVqWZ2etK2evKGKhgv1MB7bpjQg1LE8hdq23IDalmcNMY1cywqdmvFsb9+Zl2youQ7uOSvSI328aLCjF4lVHbEeVdMktUy+Xsi9JJlv6lnHcdT715Z3cYSpNazb3cm7KyEWw5eNrvgMtFe2fBzlGJ6ISox9LL2HeT/MCEeCSKnKeXf35lAmq2dwsUnN5JTeDUUQTVLjY8J/ul6vM24IGAjkeVI2V7f0PqAhWGq8KdRBImfNRqaQ/gzjG0hVkXa88++otzWKK99kcY/eRgbjoU/d0APM0M3ogATYHjhD7Hsjl/qN3tbYvjuxo+9uPb0k73Sltr7St1bz1pKvOkyjU+1TDg1h6NDuC331+yXloI5eVl9nQ98n2dNo9pQlD6CBPfp8gMO/p2mS8WjL/iGmEXNjvcL4QXP742k5fb3RgQbI83g3V5wOykP62Vo/ZXFivtyrk7nUDnwyIBZ8nLnQyYKh7wchdij1Rh5x7EYnW2/cms3R968ehZK3VVrX51CrCPM27e7wjfbtEzzI17UUW229mDt+k75IeBTLosM2LbqcEuaeFRzWgpev4q+r37frtxh8qYRHI4wj0mVaAa2VcB1WSzKyBeFXKWHrG133FhfSewttnkSEXa7DmRvdQ7H1gLkUSCYIRxGq8dhTmQW27Ttgs/8VAiBOD7pHUKkQlNB6v71MDJgwYBMjpoZGTSIjWBpyRsBcGNgMbGio3U/su7J+2thGXh3D3zTuwpa3bhNgeIXstIAdfFHQKKFDj1gk8vBw6HrtlwV+84jVlsILGR79sWtn/8jb7OjZz+Td4jZjtn4o1+S/qYGe9wJvGPVXOyC2ZHH8p8XNumSqqW513imLI1LOvYI/6Uj52od2dyY69sOh7XU403jY6Ux68+cSky2w/5ezpGpAWjltDvW5mDqufyN4LU3e/weq6KEeviIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=7705deb5c3886210476fd0dc05013147"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=7705deb5c3886210476fd0dc05013147^sys_idNOT INab7984b6c3582210476fd0dc050131a5"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration when Created">7705deb5c3886210476fd0dc05013147</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <subflow display_value="Integration Yahoo Weather AOOP">74b58472c3582210476fd0dc05013102</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/42S3W7bMAyFX2XQtWPYceykvhtSBBiwrUC79aYoDFqiEwGy7OonTRbk3UfFXmp0w9BLkYfkx0M9nZgUrGTZqs5Xi+WcZ/lqPk+TxbJoRCJ4kidpRk8WMQ0tktLgVlpnwMlO28og74yg7B6UD+nTaW0QHIoqjbk3BrU7nykvpO0VHB9HGUX4TipBeVY+PUesB0P9HRpWnt6lPgqooEZF0vsp4af7P4T/53fHfsg2SIM5jqGv155vcSoImGnE8OBQCyS+BpTFiLWgBbjOHFnpjKcAeSHutDpeFTup3bB/Cwcrf9HQbB5N5pbsUKW0apakVQ0WA+OEmE201Wjq+51J09yCgwdi4M6bq+Gd5GgHUwU24JVbT2OD4K4PTYYSB7X6CBLvlG/198Fhdu0+uba3hIt9sCsYMLrRPOy616u3G6kvzo5J1XFQEymC4buNRBX+w+WaEQPnjKy9CyucmJc//j7jEPzXIVFhSzRVC30v9bbqTbeXFwJaqI23ih5xo7pXIrdyq2PgYeGYTgzxhuK3l/AjGBl8+kZtqDhM/Knli8cvAXRZ8OUCb25m2SoTs0Ut6lmdJ82sSJJ5vio4/eWCnSNmj3atwNo3E2mJ6sUHCwZLR/Oq4TihhBvZu88EtcfRp/Pzb/+pT1LSAwAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 20:50:26</sys_created_on>
+        <sys_id>ab7984b6c3582210476fd0dc050131a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:26</sys_updated_on>
+        <ui_id>7d500910-2502-4d9a-aaf2-0856af89fb01</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=7705deb5c3886210476fd0dc05013147"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7705deb5c3886210476fd0dc05013147"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7705deb5c3886210476fd0dc05013147^sys_idNOT INb305deb5c3886210476fd0dc05013191,b705deb5c3886210476fd0dc05013194,bb05deb5c3886210476fd0dc05013197,bf05deb5c3886210476fd0dc0501319a,ff05deb5c3886210476fd0dc05013180"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b70c1be7-a5eb-4d9a-b362-4ccf0ccb75e2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">7705deb5c3886210476fd0dc05013147</model>
+        <model_id>7705deb5c3886210476fd0dc05013147</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7705deb5c3886210476fd0dc05013147</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:37</sys_created_on>
+        <sys_id>b305deb5c3886210476fd0dc05013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=031a3f44-767b-4726-a958-fc8722d64430</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">7705deb5c3886210476fd0dc05013147</model>
+        <model_id>7705deb5c3886210476fd0dc05013147</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7705deb5c3886210476fd0dc05013147</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:37</sys_created_on>
+        <sys_id>b705deb5c3886210476fd0dc05013194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=c17b4416-2a2e-4669-b468-f35f27686374</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">7705deb5c3886210476fd0dc05013147</model>
+        <model_id>7705deb5c3886210476fd0dc05013147</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7705deb5c3886210476fd0dc05013147</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:37</sys_created_on>
+        <sys_id>bb05deb5c3886210476fd0dc05013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=6ffbc995-0b66-43a1-af32-6810131ebde8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">7705deb5c3886210476fd0dc05013147</model>
+        <model_id>7705deb5c3886210476fd0dc05013147</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7705deb5c3886210476fd0dc05013147</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:37</sys_created_on>
+        <sys_id>bf05deb5c3886210476fd0dc0501319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=681cb650-7dc7-46f1-b02d-cc1f6ec9902c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_successful</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Successful</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Bases - Yahoo Weather Integration when Created">7705deb5c3886210476fd0dc05013147</model>
+        <model_id>7705deb5c3886210476fd0dc05013147</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7705deb5c3886210476fd0dc05013147</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:36</sys_created_on>
+        <sys_id>ff05deb5c3886210476fd0dc05013180</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7705deb5c3886210476fd0dc05013147^sys_idNOT IN3f05deb5c3886210476fd0dc05013159,b305deb5c3886210476fd0dc0501316d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7705deb5c3886210476fd0dc05013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:36</sys_created_on>
+        <sys_id>3f05deb5c3886210476fd0dc05013159</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7705deb5c3886210476fd0dc05013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:36</sys_created_on>
+        <sys_id>b305deb5c3886210476fd0dc0501316d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:10:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7705deb5c3886210476fd0dc05013147"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7705deb5c3886210476fd0dc05013147"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7705deb5c3886210476fd0dc05013147"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e56cc139c3046210476fd0dc05013161</sys_id>
+        <latest_snapshot>7705deb5c3886210476fd0dc05013147</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch6-01-29-2025_02-11-2025_1128.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e56cc139c3046210476fd0dc05013161^sys_idNOT IN1015deb5c3886210476fd0dc050131f9"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"1015deb5c3886210476fd0dc050131f9","name":"plan","plan_signature":null}}</plan>
+        <plan_id>e56cc139c3046210476fd0dc05013161</plan_id>
+        <snapshot>057c48bac3582210476fd0dc05013196</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:10:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1015deb5c3886210476fd0dc050131f9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:50:28</sys_updated_on>
+        <trigger display_value="">1015deb5c3886210476fd0dc050131f7</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e56cc139c3046210476fd0dc05013161"/>
+</record_update>

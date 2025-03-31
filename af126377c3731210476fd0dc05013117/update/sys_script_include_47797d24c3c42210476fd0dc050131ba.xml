@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1584301_bases.basesUtilss</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>basesUtilss</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var basesUtilss = Class.create();
+basesUtilss.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    initialize: function() {
+    },
+
+	userHasActiveSubscription: function () {
+
+		if (this._userAlreadyRegistered() == true) {
+
+			return 'sys_id=0';
+		}
+
+		else {
+			
+			return this._getNonFullBases();
+
+		}
+	},
+
+	_userAlreadyRegistered: function () {
+
+		var userID = gs.getUserID();
+		var grUsers = new GlideRecord("x_1584301_bases_users");
+
+		grUsers.addQuery('state', '!=', '4');
+		grUsers.addQuery('opened_by', userID);
+		grUsers.query();
+
+		if (grUsers.next()) {
+
+			return true; //Ele já está cadastrado
+		}
+
+		else {
+			return false;
+		}
+
+	},
+
+	_getNonFullBases: function () {
+
+		var availableBases = [];
+		var busyBases = [];
+
+		var grBases = new GlideRecord("x_1584301_bases_registrations");
+		grBases.query();
+
+		while (grBases.next()) {
+
+			var baseID = grBases.getValue('sys_id');
+			var maxCapacity = grBases.getValue('max_capacity');
+
+			var grWorkers = new GlideRecord("x_1584301_bases_users");
+			grWorkers.addQuery('state', '!=', '4');
+			grWorkers.addQuery('base', baseID);
+			grWorkers.query();
+
+
+			var numRegisteredWorkers = grWorkers.getRowCount();
+
+			if (numRegisteredWorkers < maxCapacity) {
+
+				availableBases.push(baseID);
+			}
+
+			else {
+				busyBases.push(baseID);
+			}
+			
+		}
+		
+		return 'sys_idIN ' + availableBases.join(',');
+
+	},
+
+
+	getAvailableUsers: function () {
+
+		var busyUsers = [];
+		var gr = new GlideRecord("x_1584301_bases_users");
+		gr.addQuery('state', '!=', '4');
+		gr.query();
+
+		while (gr.next()) {
+			busyUsers.push(gr.opened_by.toString());
+		}
+
+		if (busyUsers.length === 0) {
+			return '';
+		}
+
+		return 'sys_idNOT IN' + busyUsers.join(',');
+	},
+
+	getAvailableManagers: function () {
+
+		var grBases = new GlideRecord("x_1584301_bases_registrations");
+		grBases.addEncodedQuery('managerISNOTEMPTY');
+		grBases.query(); //Consulta na tabela de Bases para verificar registros que possuem um gerente.
+
+		var busyManagers = []; //Gerentes ocupados (já associados a uma base)
+		
+
+		while (grBases.next()) { //Iterando sobre cada registro
+
+			var manager = grBases.getValue('manager'); //Capturando o gerente do registro
+
+			//Se o gerente do registro não estiver na lista de gerentes ocupados, então adicionar-lo a lista.
+
+			if (!busyManagers.includes(manager)) {
+				busyManagers.push(manager);
+			}  
+			//Caso contrário (O gerente ocupado não está na lista de gerentes)
+		}
+
+		//Obtém a lista de todos os gerentes
+		var allManagers = this._getManagersbyRole();
+
+		var availableManagers = [];
+		//Itero sobre cada gerente
+		for (var i = 0; i < allManagers.length; i++) {
+
+			//Se a lista de gerente ocupado não possui esse gerente, então ele está disponível
+			if (!busyManagers.includes(allManagers[i])) {
+				availableManagers.push(allManagers[i]);
+			}
+		}
+
+		//Retornar a lista de apenas gerentes disponiveis para o usuário selecionar
+		return 'sys_idIN ' + availableManagers.join(',');
+
+	},
+
+	_getManagersbyRole: function () {
+
+		var managers = [];
+
+		var grManagerRole = new GlideRecord('sys_user_has_role');
+		grManagerRole.addQuery('role.name', 'x_1584301_bases.manager');
+		grManagerRole.query();
+
+		while (grManagerRole.next()) {
+			managers.push(grManagerRole.user.getValue());
+		}
+
+		return managers;
+
+
+	},
+
+    type: 'basesUtilss'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 19:01:01</sys_created_on>
+        <sys_id>47797d24c3c42210476fd0dc050131ba</sys_id>
+        <sys_mod_count>55</sys_mod_count>
+        <sys_name>basesUtilss</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_script_include_47797d24c3c42210476fd0dc050131ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-17 20:29:39</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>47797d24c3c42210476fd0dc050131ba</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 19:01:00</sys_created_on>
+        <sys_id>cf3ab1a4c3c42210476fd0dc05013167</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 19:01:00</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

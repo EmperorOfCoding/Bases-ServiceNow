@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1318034000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Run the Integration daily</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>bases__yahoo_weather_integration_daily</internal_name>
+        <label_cache>[{"name":"83b54d24-42ca-4478-84e0-51a331168dd9.item.city_state","label":"2 - For Each➛Registrations Record➛City State","reference":"","reference_display":"City State","type":"string","base_type":"string","parent_table_name":"x_1584301_bases_registrations","column_name":"city_state","usedInstances":{"c2a092e2-31c9-4fd0-b2e8-7fd8d4a9929b":["state"]}},{"name":"83b54d24-42ca-4478-84e0-51a331168dd9.item","label":"2 - For Each➛Registrations Record","reference":"x_1584301_bases_registrations","reference_display":"Registrations","type":"reference","base_type":"reference","usedInstances":{"d01cb0cf-e2c7-4b0f-b604-72c29bf053da":["record"],"a4f70abe-a9a8-4792-af49-fae98587045d":["registrations_record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"83b54d24-42ca-4478-84e0-51a331168dd9.item.city","label":"2 - For Each➛Registrations Record➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_1584301_bases_registrations","column_name":"city","usedInstances":{"c2a092e2-31c9-4fd0-b2e8-7fd8d4a9929b":["location"]}},{"name":"5b0a6e06-df0c-4838-a9ed-6c9e99a2f662.Records","label":"1 - Look Up Records➛Registrations Records","reference":"x_1584301_bases_registrations","reference_display":"Registrations","type":"records","base_type":"records","usedInstances":{"83b54d24-42ca-4478-84e0-51a331168dd9":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>22b8523dc3886210476fd0dc050131cc</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Bases - Yahoo Weather Integration Daily</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>6eb8923dc3886210476fd0dc05013109</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 13:41:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e2871175c3446210476fd0dc05013164</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Bases - Yahoo Weather Integration Daily</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_hub_flow_e2871175c3446210476fd0dc05013164</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:49:07</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e2871175c3446210476fd0dc05013164"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e2871175c3446210476fd0dc05013164"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2025-03-03 18:26:38</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6eb8923dc3886210476fd0dc05013109</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:34:29</sys_updated_on>
+        <time>1970-01-01 16:00:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:6eb8923dc3886210476fd0dc05013109^sys_idNOT INe6b8923dc3886210476fd0dc0501310a"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:6eb8923dc3886210476fd0dc05013109</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2025-03-03 18:26:38</run_start>
+        <run_time>1970-01-01 16:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('6eb8923dc3886210476fd0dc05013109');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:38</sys_created_on>
+        <sys_id>e6b8923dc3886210476fd0dc0501310a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:34:29</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">6eb8923dc3886210476fd0dc05013109</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e2871175c3446210476fd0dc05013164"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e2871175c3446210476fd0dc05013164"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e2871175c3446210476fd0dc05013164^sys_idNOT INa2871175c3446210476fd0dc05013165"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e2871175c3446210476fd0dc05013164</id>
+        <name>Bases - Yahoo Weather Integration Daily</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 13:41:50</sys_created_on>
+        <sys_id>a2871175c3446210476fd0dc05013165</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 13:41:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a2871175c3446210476fd0dc05013165"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e2871175c3446210476fd0dc05013164"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e2871175c3446210476fd0dc05013164"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e2871175c3446210476fd0dc05013164"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e2871175c3446210476fd0dc05013164^sys_idNOT IN9db8123dc3886210476fd0dc050131d3"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration Daily">e2871175c3446210476fd0dc05013164</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:33</sys_created_on>
+        <sys_id>9db8123dc3886210476fd0dc050131d3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:34:22</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STUvEMBD9K5LzWtJdP3sTZMGDCipeRMo0me4GpklM09Uq/ncnbVxULLnMm5k37z369CEIGiRRiQfToVgIYyMGC/QwemR0Q0ZjHedeB1ZDdGEUVQwDLoQLGoOoSikXYgc04P3YX2le42ELXSLIq1OXy/L8VB7Kkt+BPKuk5MddD4GnY+L6EGprSAe0onp6Zj2JbgX6CLWSarXkT8rl2VHZnKyacqlXgHjMFH9s/L4e/zHzUzu+RbQa+VQL1OM/TgOCvrU07ie2HNRstIO33rxjpgrYIotXODf3Za1N7wnGGVZbZxTe+micnZEIDeUd5Wjo7M3sgGuNLQwUH3OEjAw986FPmpOKLKm937rXu++Da2Mng7lJTgHtK4gxmGaI2KfEkbBjoroD743d1D64nZmWWUtXTLEVLblXPtqbjS1AJeEFRwTFmvHLCX6EYJKLa6bh5c/Jff0ypLuzj6y4nk3zQA5lbZDyb9OrYHy84AM7zHI/n78AN8Sgj6cCAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e2871175c3446210476fd0dc05013164^sys_idNOT IN1db8123dc3886210476fd0dc050131d5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration Daily">e2871175c3446210476fd0dc05013164</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:33</sys_created_on>
+        <sys_id>1db8123dc3886210476fd0dc050131d5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:00:08</sys_updated_on>
+        <ui_id>5b0a6e06-df0c-4838-a9ed-6c9e99a2f662</ui_id>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9laBnE+w6Tbt9W1oKC71AW/pSipBtORGr2F5JzqUh/74jS7KN43YTcKFlHzUzks7MnDOWX7aIJegCnacT3yfB6fmZ74eh70+nYUyCKAqnceRHkwh5KCMLCpGKRJzCckl4qddrDLsmoR/giEgqsaAzJpUgiuWZhLiEyYKTzbMNf+i44znjiaAZunh59VBBBNyiqEAX247rUJicRJRD6JPF2YGtNkW9xJXP2G7a20Z3xpGLREPxPUTXimYJBQwp4ZJ6aEGyhKhcbGqLoCS5z3hjmLNMwYlIB68le4N7z30dl1LIKqbGVy+xrZQxp1dEkUclyliVwobG85zFVJp6JDQlJVeXbZsJuC90cc0Wk7bZnfNykd2ZcqD6ANcYsJQSQNBCJ6qR2zTSx3m+enAor1lW1cQ6eR4TXq+IUoJFpdJ4tohyuoCD8IIUBctmuBD5klWbActiPOOwGKc8X8Glks2yMYk18DHUlYyvwX5VmZ+JYDqLWzgGNgMgxoEh2LRQ5qWoSrnEMS9l5RAkk+YstPOQ3MhLTqRsMoeS4z+lxm3qYDPGpmh6SyxYoX7CEUtqk9t5Bynl1G8oF+dZwhzPl02ZO4oYWAQVAieCyzaEPlhWDnu2m74DrByCweQAeXwnQcDlX08PxzPclOAfNI/PPiTZacMnmQuFTS2H5fkBEBzP7zUzR9HmPVSW5imjPOmb+tfa0Zn6J//n1P+SJAdACTbdYxlnWfUJB6CfxX7/4xH7o8Ozil4N9ysbkfG+BshI5aO3o5VwABynhEe4e/Rk8PRAdPO+okx31jujFUA4mADCk2EEsK3TrAvZU3P3atPddPFvOp5044GCrQ3Brk9gR90ZHHvnyW5fwOFRCm6TzXiu3uHcwM+7dxTpfeYImMNWex82+sUrlsyoam53UUmuVoT/7vNbxmHXqCq9T3gqTj6U7TRoJApKgR8nCc1rvxUDeB7tz5DAM+bjRsgBWFw5bsl69FCD6UVoxwgonc6q3rTnyK/aakk+GfDB+GW/pK5ZvRp0PfsWf1jDCeH1L+hGXsBfEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e2871175c3446210476fd0dc05013164^sys_idNOT IN62294c76c3582210476fd0dc05013163"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration Daily">e2871175c3446210476fd0dc05013164</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>83b54d24-42ca-4478-84e0-51a331168dd9</parent_ui_id>
+        <subflow display_value="Integration Yahoo Weather AOOP">74b58472c3582210476fd0dc05013102</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/41S22rcMBD9laLntfHdXr8VQqDQNpC2eQnBjKXxrkCWHVne7HbZf+/IdjcmLSGPmjMz5zJ6PDMpWMniok6LJI94nBZRFAZJnjUiEDxIgzCmJ9swDS1Sp8GdHKwBKzs9VAZ5ZwShB1Cjg8/nIq7TRESJl0QcvCTJC69IMPDSEOI4DLNCiK0vLbaXC80JOfQKTg/LOFX4XiphULPy8WnDejDEa9Gw8vwGsqceKwU1Khq8xwYJ4UgbPurodXZl6dP9X0vvG3bsE/rKS4DTGW4YHi1qgaSjATXghrWgBdjOnFhpzUgFgyDutDpdO/ZS2zmAFo6D/E3L42iz2l+yYxWSpTgIqxoGdFpWytiqt1pSfettSreTHO96957pLNTqI9t5p8ZWf59DcZfDBkZlV5cbB2LG3jl3XhZjzY9993I9z63UU0gLqDoO6voCa42sR4uDu/Yof/6b8Vz8+p+ro8KWeKsW+l7qXdWb7iAnLpLe+jtFD79R3QtpHORO+8CdNZ/uAv4t1W+m8gMY6RL5Rmto2DH+0vJ5xC/uV+UZzxPcbr24iIWX1KL26jRovCwIorTIOH20jF2mU1TPo7M2R7WEUs2hU8PAjeztZ5JwwMX/5ekPz5TaDY4DAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 20:49:01</sys_created_on>
+        <sys_id>62294c76c3582210476fd0dc05013163</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:49:01</sys_updated_on>
+        <ui_id>a4f70abe-a9a8-4792-af49-fae98587045d</ui_id>
+        <wait_for_completion>false</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e2871175c3446210476fd0dc05013164^sys_idNOT INd9b8123dc3886210476fd0dc050131d7"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9db8123dc3886210476fd0dc050131d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration Daily">e2871175c3446210476fd0dc05013164</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:33</sys_created_on>
+        <sys_id>d9b8123dc3886210476fd0dc050131d7</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:49:04</sys_updated_on>
+        <ui_id>83b54d24-42ca-4478-84e0-51a331168dd9</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj86I86twFCgh61AV/QyFAYt0YkwWdIkOaln+L+PipWs6HEnm4/k43siZ2bGYMfgX8y99/Kg2f7n24ZJHTH6n5mGAdmeyYCDZxt2AjXGeJ6/dDnUmNdb0ed8e7erdltoUGxr3mDTQNnXdZk9IzdO+GWhViG9VTC9/j8DP0olHCaRFhxpC+jYfv6UCpPFVkGHigYlBuqXgsKiEX1T5A2vyroq87zc3RVdXXVFKSpAUVPdtfMxmf70BpGdQnfjpU9UUeYbhu8BtUAa1IPyuGEDaAHBuIntgxsJcAjiSavpVnGUOhAdi7XvXv4h7iLPY2GP5IjjmryFbXrIFeZHIzk+2SCNXpEAnUo93Khx0N9X+XEF2MOownUFhIye+NBGzVFFktT/OJrz83Xgg9QXfympDAd1iyAEJ7sxoI9rQIUDEbUDWCv1obXOnOSlmbQM2UFRkPXKnGloPLcMeBSe0RNB9kD41wv8Ck5GF9+IhpqXi/v29xjnrj6S4nY1TQWeO2nDPdGdMIlb3uK9rkx+PQyBXHoa+BKxx+uVx8RES5b8I3Q27leU+g9b/gJcG/x0LwMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e2871175c3446210476fd0dc05013164"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e2871175c3446210476fd0dc05013164"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e2871175c3446210476fd0dc05013164"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e2871175c3446210476fd0dc05013164"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e2871175c3446210476fd0dc05013164"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e2871175c3446210476fd0dc05013164"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Run the Integration daily</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>bases__yahoo_weather_integration_daily</internal_name>
+        <label_cache>[{"name":"83b54d24-42ca-4478-84e0-51a331168dd9.item.city_state","label":"2 - For Each➛Registrations Record➛City State","reference":"","reference_display":"City State","type":"string","base_type":"string","parent_table_name":"x_1584301_bases_registrations","column_name":"city_state","usedInstances":{"c2a092e2-31c9-4fd0-b2e8-7fd8d4a9929b":["state"]}},{"name":"83b54d24-42ca-4478-84e0-51a331168dd9.item","label":"2 - For Each➛Registrations Record","reference":"x_1584301_bases_registrations","reference_display":"Registrations","type":"reference","base_type":"reference","usedInstances":{"d01cb0cf-e2c7-4b0f-b604-72c29bf053da":["record"],"a4f70abe-a9a8-4792-af49-fae98587045d":["registrations_record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"83b54d24-42ca-4478-84e0-51a331168dd9.item.city","label":"2 - For Each➛Registrations Record➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_1584301_bases_registrations","column_name":"city","usedInstances":{"c2a092e2-31c9-4fd0-b2e8-7fd8d4a9929b":["location"]}},{"name":"5b0a6e06-df0c-4838-a9ed-6c9e99a2f662.Records","label":"1 - Look Up Records➛Registrations Records","reference":"x_1584301_bases_registrations","reference_display":"Registrations","type":"records","base_type":"records","usedInstances":{"83b54d24-42ca-4478-84e0-51a331168dd9":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Bases - Yahoo Weather Integration Daily</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Bases - Yahoo Weather Integration Daily">e2871175c3446210476fd0dc05013164</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>22b8523dc3886210476fd0dc050131cc</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:49:06</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=22b8523dc3886210476fd0dc050131cc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=22b8523dc3886210476fd0dc050131cc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=22b8523dc3886210476fd0dc050131cc"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=22b8523dc3886210476fd0dc050131cc^sys_idNOT IN62b8523dc3886210476fd0dc050131cd"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>22b8523dc3886210476fd0dc050131cc</id>
+        <name>Bases - Yahoo Weather Integration Daily</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:37</sys_created_on>
+        <sys_id>62b8523dc3886210476fd0dc050131cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:26:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=62b8523dc3886210476fd0dc050131cd"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=22b8523dc3886210476fd0dc050131cc"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=22b8523dc3886210476fd0dc050131cc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=22b8523dc3886210476fd0dc050131cc"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=22b8523dc3886210476fd0dc050131cc^sys_idNOT IN26b8523dc3886210476fd0dc050131e3"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration Daily">22b8523dc3886210476fd0dc050131cc</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:37</sys_created_on>
+        <sys_id>26b8523dc3886210476fd0dc050131e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:34:28</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STUvEMBD9K5LzWtJdP3sTZMGDCipeRMo0me4GpklM09Uq/ncnbVxULLnMm5k37z369CEIGiRRiQfToVgIYyMGC/QwemR0Q0ZjHedeB1ZDdGEUVQwDLoQLGoOoSikXYgc04P3YX2le42ELXSLIq1OXy/L8VB7Kkt+BPKuk5MddD4GnY+L6EGprSAe0onp6Zj2JbgX6CLWSarXkT8rl2VHZnKyacqlXgHjMFH9s/L4e/zHzUzu+RbQa+VQL1OM/TgOCvrU07ie2HNRstIO33rxjpgrYIotXODf3Za1N7wnGGVZbZxTe+micnZEIDeUd5Wjo7M3sgGuNLQwUH3OEjAw986FPmpOKLKm937rXu++Da2Mng7lJTgHtK4gxmGaI2KfEkbBjoroD743d1D64nZmWWUtXTLEVLblXPtqbjS1AJeEFRwTFmvHLCX6EYJKLa6bh5c/Jff0ypLuzj6y4nk3zQA5lbZDyb9OrYHy84AM7zHI/n78AN8Sgj6cCAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=22b8523dc3886210476fd0dc050131cc^sys_idNOT IN22b8523dc3886210476fd0dc050131e2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration Daily">22b8523dc3886210476fd0dc050131cc</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:37</sys_created_on>
+        <sys_id>22b8523dc3886210476fd0dc050131e2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:30:58</sys_updated_on>
+        <ui_id>5b0a6e06-df0c-4838-a9ed-6c9e99a2f662</ui_id>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9laDnEOw6Tbt9W1oKC71AW/pSipBtORGryF5JzqUh/74jS7KD43YTcKFlHzUzks7MnDOWXzaIpegCnWfjICDh6flZEERREEwmUULCOI4mSRzE4xgNkSBzCpGaxJzCckF4adYrDLvGURDimCiqsKRTprQkmuVCQVzKVMHJ+tmFP7TcyYzxVFKBLl5eh6ggEm7RVKKLTct1KExOYsoh9MnhbMHW66Je4spnbTe72wZ31pHL1EAJhoiuNBUpBQwZ4YoO0ZyIlOhcrmuLpCS9F7wxzJjQcCIywSvF3uDe88DEZRSySqj11UvsKmXN2RXR5FHLMtGldKHJLGcJVbYeKc1IyfXlrs0G3BemuHaLTdvuznk5F3e2HKg+wDcGLKUCELQwiRrkLo3scZYvHzzKayaqmjgnzxPC6xXRWrK41AbPBlFO53AQnpOiYGKKC5kvWLUZsMxHUw6LUcbzJVyq2FSMSGKAj6CuZHQN9qvK/EwkM1ncwjGwGQAxDgzBtoUqL2VVygVOeKkqhyRC2bPQdojUWl1yolSTOZQc/ykNblsHlzG2RTNbEskK/ROOWFCX3HZ4kFJOg4ZySS5S5nm+aMrcUkTPIqgQeBFc7kLoguXksGe76TrAySHsTQ6Qx3cSBFz+9fRwPMNtCf5B8+TsQ5KdNnxSudTY1rJfnh8AwfP83jBzEK/fQ+VonjHK066pf20cral/8n9O/S9JcgCUYts9JjgT1SccgH4W+4OPR+yPFs8qejXcr2xEJfsaIAOdD96OVsIBcLwSHuHuwZPF0wHRz/uKMu1Z741OAFFvAohO+hHApk6zLmRHzf2rzXTTx7+ZeNKOBwrubAi3XQI76s7w2DtPtvsCjo5S8C7ZrOfqHc71/Lx7R5HDzxwBM9jq7sNWv3jJ0inVze0+Ks31kvDfXX7HOOwbVaX3CU/F8YeynYSNREEp8OOkoHm7b8UQnkf7MyQcWfNxI+QALL4ct2Q1eKjBdCJ0YwSUTqdVb3bnyK/a6kg+7vHB+GW/pL5ZnRr0PfsWf1j9CeH1L8ujRAxfEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=22b8523dc3886210476fd0dc050131cc^sys_idNOT INbb298c76c3582210476fd0dc0501318a"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration Daily">22b8523dc3886210476fd0dc050131cc</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>83b54d24-42ca-4478-84e0-51a331168dd9</parent_ui_id>
+        <subflow display_value="Integration Yahoo Weather AOOP">74b58472c3582210476fd0dc05013102</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/41SXW/bMAz8K4OebcOfiZO3oUWAAdsKtFtfisKgJToRIMuuJKfJgvz3UbGXGt0w9FHHI3l31NOJScHWLCvrosyXKc+KMk2TOF8uGhELHhdxktGTBUxDi8Q0uJXWGXCy07YyyDsjqLoHNfjy6VRmdZGLNA/zlEOY58syLHOMwyKBLEuSRSnEKpIO2/OZ+oS0vYLj49ROCN9JJQxqtn56DlgPhvY6NGx9elf6qHAFNSqi3s+Vf7r/o/z/vtyxH6sN0mKOE/T1OvMNpwYvMwkYHhxqgaSvAWUxYC1oAa4zR7Z2ZiDAIIg7rY5Xxk5qN/pv4WDlL1qapcFs75odqoSsZnFS1WDRa5wpZjNuNYX63jNxmltw8EAauBvMNfBOcrRjqAIbGJS7mWMj4a73Q8YWB7X6iCTeqaHV38eE2XX67NqDJbnY+7h8AFMazcOue71mu5H6kuxUVB0HNaMiGL7bSFT+P1yuGTBwzsh6cN7CiQ3yx99nHMF/HRIVtqSmaqHvpd5Wven28qKADLXRVtEjalT3Ssqt3OoIuDcc0Ykh2hB+e4EfwUif0zcaQ81+408tXwb84oUuF3yZ42oVZmUmwrwWdVgXcRMu4jgtygWnv7xg54DZo71RYO1biGSiehl8BGOkU3jVeBzfwo3s3WcStccpp/Pzb970DMTqAwAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 20:49:06</sys_created_on>
+        <sys_id>bb298c76c3582210476fd0dc0501318a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:49:06</sys_updated_on>
+        <ui_id>a4f70abe-a9a8-4792-af49-fae98587045d</ui_id>
+        <wait_for_completion>false</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=22b8523dc3886210476fd0dc050131cc^sys_idNOT INeab8523dc3886210476fd0dc050131e0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9db8123dc3886210476fd0dc050131d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Bases - Yahoo Weather Integration Daily">22b8523dc3886210476fd0dc050131cc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:37</sys_created_on>
+        <sys_id>eab8523dc3886210476fd0dc050131e0</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:49:06</sys_updated_on>
+        <ui_id>83b54d24-42ca-4478-84e0-51a331168dd9</ui_id>
+        <values>H4sIAAAAAAAA/51TXW+cMBD8L37mEB8pOu4tShQpUttIlygvVYQWe7mzamxqm7tQxH/v+uBIlMc+wY53Z2cGMzLT+6737sXcOicPmu1+vUVM6oDR+8g0tMh2THpsHYvYCVQf6nH8VidQYFJsRJPwzc02326gRLEpeIllCVlTFFm8R26scNNEo0K6TsHw+v8M/CiVsLiI7MCSNo+W7cYvR1LQgrQUTZkmJc+zIs+SJNvepHWR12kmckBREKGCGhW1Pi7uvpj1QxdKO0tYgO/LzH5F6RFEZEnE8N2jFkjrG1AOI9aCFuCNHdjO254AiyCetBrWjqPUnuhY6H138i9tTJMkNDZIhjjOh2tZLTnOcHMPHp6JmvveLq38aCRHN0chsIFe+bvP2Nzw1Hlp9DzioVbXaaP6Vv+ck2ArwfWzEdI7EoFdMBqkLz6a56M5768qH6S+hLIcKsNBrRV4b2Xd+6BnZKiwJaKqha6T+lB11pzkZZi0tPFBURE3ypxpabiiMfAgPKZcIX4g/P4Cv4KVwcUPoqHhKWJucHcKnPvwQiFWf/qgZHa2eKjmGMIIt7Lzt7TghIvc6S3c+pl7zZRLRxJeAvZ4/VfCwUA3SPLP0NnY30H8Bzb9AzhCXOJ1AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=22b8523dc3886210476fd0dc050131cc"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=22b8523dc3886210476fd0dc050131cc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_22b8523dc3886210476fd0dc050131cc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_22b8523dc3886210476fd0dc050131cc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_22b8523dc3886210476fd0dc050131cc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_22b8523dc3886210476fd0dc050131cc"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e2871175c3446210476fd0dc05013164</sys_id>
+        <latest_snapshot>22b8523dc3886210476fd0dc050131cc</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch6-01-29-2025_02-11-2025_1128.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e2871175c3446210476fd0dc05013164^sys_idNOT INa2b8923dc3886210476fd0dc0501310d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"a2b8923dc3886210476fd0dc0501310d","name":"plan","plan_signature":null}}</plan>
+        <plan_id>e2871175c3446210476fd0dc05013164</plan_id>
+        <snapshot>21e2cc43c3d02210476fd0dc050131ef</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:26:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a2b8923dc3886210476fd0dc0501310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:26:38</sys_updated_on>
+        <trigger display_value="">6eb8923dc3886210476fd0dc05013109</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e2871175c3446210476fd0dc05013164"/>
+</record_update>

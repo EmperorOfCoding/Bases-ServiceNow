@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Join a Base">31dd5300c3402210476fd0dc05013112</catalog_item>
+        <catalog_variable>IO:d0656498c3842210476fd0dc0501319f</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-28 19:37:20</sys_created_on>
+        <sys_id>971c4b74c300a210476fd0dc050131b0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>function</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_971c4b74c300a210476fd0dc050131b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 19:40:12</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Only able to choose Function after choosing a Base record.">3b1bc734c300a210476fd0dc05013164</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>function</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=971c4b74c300a210476fd0dc050131b0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases ">af126377c3731210476fd0dc05013117</application>
+        <file_path/>
+        <instance_id>56b236671bb08e58c82acb7b234bcba2</instance_id>
+        <instance_name>dev242599</instance_name>
+        <name>catalog_ui_policy_action_971c4b74c300a210476fd0dc050131b0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Join a Base">31dd5300c3402210476fd0dc05013112</catalog_item><catalog_variable>IO:d0656498c3842210476fd0dc0501319f</catalog_variable><cleared>false</cleared><disabled>true</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 19:37:20</sys_created_on><sys_id>971c4b74c300a210476fd0dc050131b0</sys_id><sys_mod_count>2</sys_mod_count><sys_name>function</sys_name><sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package><sys_policy/><sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope><sys_update_name>catalog_ui_policy_action_971c4b74c300a210476fd0dc050131b0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 19:40:12</sys_updated_on><table/><ui_policy display_value="Only able to choose Function after choosing a Base record.">3b1bc734c300a210476fd0dc05013164</ui_policy><value/><value_action>ignore</value_action><variable>function</variable><variable_set/><visible>false</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=971c4b74c300a210476fd0dc050131b0"/></record_update>]]></payload>
+        <payload_hash>1458376835</payload_hash>
+        <record_name>function</record_name>
+        <reverted_from/>
+        <source>ab126377c3731210476fd0dc0501311c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-28 19:40:12</sys_created_on>
+        <sys_id>47cc0fb4c300a210476fd0dc05013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1954e12d8d40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 19:40:12</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>0fcc0fb46c00a2106deb29e3e8903117</update_guid>
+        <update_guid_history>0fcc0fb46c00a2106deb29e3e8903117:1458376835,80ac0bb4d600a210cab77c47a79ad406:289603649,8d2c4f74b000a210d5dd566135ea3d99:-1577887867</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="function">5add0338c300a210476fd0dc050131ce</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-28 19:44:48</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>36dc099714fe4cf6ab46ee5ddc2d39e4</sys_id>
+        <sys_metadata>971c4b74c300a210476fd0dc050131b0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>function</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_scope_delete display_value="">0c7f6c8abc044a02b5c722e0c83c7884</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_971c4b74c300a210476fd0dc050131b0</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_971c4b74c300a210476fd0dc050131b0">47cc0fb4c300a210476fd0dc05013118</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 19:44:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

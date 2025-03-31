@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Bases">99eb27b3c3b31210476fd0dc05013133</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Base Registration</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1584301_bases.manager,x_1584301_bases.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 20:53:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>01c0048cc3c02210476fd0dc05013137</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Bases</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_app_module_01c0048cc3c02210476fd0dc05013137</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 21:19:16</sys_updated_on>
+        <timeline_page/>
+        <title>Bases</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases ">af126377c3731210476fd0dc05013117</application>
+        <file_path/>
+        <instance_id>56b236671bb08e58c82acb7b234bcba2</instance_id>
+        <instance_name>dev242599</instance_name>
+        <name>sys_app_module_01c0048cc3c02210476fd0dc05013137</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Bases">99eb27b3c3b31210476fd0dc05013133</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>Base Registration</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>100</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_1584301_bases.manager,x_1584301_bases.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-25 20:53:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>01c0048cc3c02210476fd0dc05013137</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Bases</sys_name><sys_overrides/><sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package><sys_policy/><sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope><sys_update_name>sys_app_module_01c0048cc3c02210476fd0dc05013137</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-25 21:19:16</sys_updated_on><timeline_page/><title>Bases</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>2015762039</payload_hash>
+        <record_name>Bases</record_name>
+        <reverted_from/>
+        <source>ab126377c3731210476fd0dc0501311c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 21:19:16</sys_created_on>
+        <sys_id>0db6c444c3042210476fd0dc050131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1953efa75b00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 21:19:16</sys_updated_on>
+        <type>Module</type>
+        <update_guid>c1b6c4441f04221059f5758b250d1bbb</update_guid>
+        <update_guid_history>c1b6c4441f04221059f5758b250d1bbb:2015762039,9e01088c63c02210b19e18a1f1f1d95d:-1062911381,a8e0c44c56c022106971c958db4873ff:-1228730192</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Bases">46074c44c3042210476fd0dc0501314c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 21:20:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0394258bc5eb4fb48e4b57b24bb39c10</sys_id>
+        <sys_metadata>01c0048cc3c02210476fd0dc05013137</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bases</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_scope_delete display_value="">0c7f6c8abc044a02b5c722e0c83c7884</sys_scope_delete>
+        <sys_update_name>sys_app_module_01c0048cc3c02210476fd0dc05013137</sys_update_name>
+        <sys_update_version display_value="sys_app_module_01c0048cc3c02210476fd0dc05013137">0db6c444c3042210476fd0dc050131bb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 21:20:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

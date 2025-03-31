@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition table="x_1584301_bases_users">base.managerDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="base.manager" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_type>allow</decision_type>
+        <description>Manager can only see the records of Base Registration Approval that are related to him.</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1584301_bases_users</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 20:21:57</sys_created_on>
+        <sys_id>45449454c3442210476fd0dc050131b8</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>x_1584301_bases_users</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_security_acl_45449454c3442210476fd0dc050131b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-25 17:05:47</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>45449454c3442210476fd0dc050131b8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 19:24:14</sys_created_on>
+        <sys_id>834f22a8c3e42210476fd0dc05013162</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 19:24:14</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

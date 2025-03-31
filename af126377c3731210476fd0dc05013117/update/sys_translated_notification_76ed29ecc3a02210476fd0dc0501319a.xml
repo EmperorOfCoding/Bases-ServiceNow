@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated_notification">
+    <sys_translated_notification action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <collection>x_1584301_bases_registrations</collection>
+        <language display_value="Brazilian Portuguese">3be8be2effb30000dada1c57f27f9d0f</language>
+        <message/>
+        <message_html><![CDATA[<p data-end="76" data-start="56"><span style="font-size: 10pt;">Ol&aacute; ${manager.name},</span></p>
+<p data-end="197" data-start="78"><span style="font-size: 10pt;">Voc&ecirc; est&aacute; recebendo este e-mail porque todos os membros da sua base foram aprovados e a capacidade m&aacute;xima foi atingida.</span></p>
+<p data-end="239" data-start="199"><span style="font-size: 10pt;">Lista de Membros da Base: ${event.parm1}</span></p>
+<p data-end="344" data-start="241"><span style="font-size: 10pt;">Se tiver alguma d&uacute;vida ou precisar de mais assist&ecirc;ncia, fique &agrave; vontade para entrar em contato conosco.</span></p>
+<p data-end="388" data-start="346"><span style="font-size: 10pt;">Atenciosamente,</span><br data-end="364" data-start="361"><span style="font-size: 10pt;">Equipe de Gest&atilde;o da Base</span></p>]]></message_html>
+        <message_text/>
+        <parent display_value="List of Registered Base Members">89ba26eec3502210476fd0dc05013167</parent>
+        <subject>Lista de Membros Registrados na Base - "${base.name}".</subject>
+        <sys_class_name>sys_translated_notification</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 14:38:53</sys_created_on>
+        <sys_id>76ed29ecc3a02210476fd0dc0501319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_translated_notification_76ed29ecc3a02210476fd0dc0501319a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 14:38:53</sys_updated_on>
+    </sys_translated_notification>
+</record_update>

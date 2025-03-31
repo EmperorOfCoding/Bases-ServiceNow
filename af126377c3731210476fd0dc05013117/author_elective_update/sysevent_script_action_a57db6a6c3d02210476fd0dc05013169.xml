@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="DELETE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_1584301_bases.custom.email.send</event_name>
+        <name>Teste</name>
+        <order>100</order>
+        <script><![CDATA[gs.info("Teste Evento Disparado!!");]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 15:19:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a57db6a6c3d02210476fd0dc05013169</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Teste</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sysevent_script_action_a57db6a6c3d02210476fd0dc05013169</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 15:24:48</sys_updated_on>
+    </sysevent_script_action>
+    <sys_es_latest_script action="DELETE">
+        <id>a57db6a6c3d02210476fd0dc05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 15:19:44</sys_created_on>
+        <sys_id>cfcd32e6c3d02210476fd0dc050131b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 15:19:44</sys_updated_on>
+        <table>sysevent_script_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases ">af126377c3731210476fd0dc05013117</application>
+        <file_path/>
+        <instance_id>56b236671bb08e58c82acb7b234bcba2</instance_id>
+        <instance_name>dev242599</instance_name>
+        <name>sysevent_script_action_a57db6a6c3d02210476fd0dc05013169</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_script_action"&gt;&lt;sysevent_script_action action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition_script/&gt;&lt;description/&gt;&lt;event_name&gt;x_1584301_bases.custom.email.send&lt;/event_name&gt;&lt;name&gt;Teste&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[gs.info("Teste Evento Disparado!!");]]&gt;&lt;/script&gt;&lt;synchronous&gt;false&lt;/synchronous&gt;&lt;sys_class_name&gt;sysevent_script_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-18 15:19:44&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a57db6a6c3d02210476fd0dc05013169&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Teste&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Bases " source="x_1584301_bases"&gt;af126377c3731210476fd0dc05013117&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Bases "&gt;af126377c3731210476fd0dc05013117&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_script_action_a57db6a6c3d02210476fd0dc05013169&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-18 15:24:48&lt;/sys_updated_on&gt;&lt;/sysevent_script_action&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;a57db6a6c3d02210476fd0dc05013169&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-18 15:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;cfcd32e6c3d02210476fd0dc050131b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-18 15:19:44&lt;/sys_updated_on&gt;&lt;table&gt;sysevent_script_action&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-367349623</payload_hash>
+        <record_name>Teste</record_name>
+        <reverted_from/>
+        <source>a5380575c3046210476fd0dc050131ab</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 15:24:48</sys_created_on>
+        <sys_id>a1fe326ac3d02210476fd0dc05013177</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195a9db7d8d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 15:24:48</sys_updated_on>
+        <type>Script Action</type>
+        <update_guid>a5fe326a92d02210fa5d572404555876</update_guid>
+        <update_guid_history>a5fe326a92d02210fa5d572404555876:-367349623,0bcdf6a664d02210c14a988d2786506c:75937687</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 15:26:38</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_script_action">sysevent_script_action</sys_db_object>
+        <sys_id>1c2999d8cb274d808773b6d08849ceb1</sys_id>
+        <sys_metadata>a57db6a6c3d02210476fd0dc05013169</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Teste</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_scope_delete display_value="">0c7f6c8abc044a02b5c722e0c83c7884</sys_scope_delete>
+        <sys_update_name>sysevent_script_action_a57db6a6c3d02210476fd0dc05013169</sys_update_name>
+        <sys_update_version display_value="sysevent_script_action_a57db6a6c3d02210476fd0dc05013169">a1fe326ac3d02210476fd0dc05013177</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 15:26:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

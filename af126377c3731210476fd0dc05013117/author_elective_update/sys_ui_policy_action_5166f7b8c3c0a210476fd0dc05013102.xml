@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>false</disabled>
+        <field>opened_by</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-28 22:42:23</sys_created_on>
+        <sys_id>5166f7b8c3c0a210476fd0dc05013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>opened_by</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_ui_policy_action_5166f7b8c3c0a210476fd0dc05013102</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 22:42:23</sys_updated_on>
+        <table>x_1584301_bases_users</table>
+        <ui_policy display_value="User and State editable for Base Admin">fb36f3b8c3c0a210476fd0dc050131ec</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=5166f7b8c3c0a210476fd0dc05013102"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases ">af126377c3731210476fd0dc05013117</application>
+        <file_path/>
+        <instance_id>56b236671bb08e58c82acb7b234bcba2</instance_id>
+        <instance_name>dev242599</instance_name>
+        <name>sys_ui_policy_action_5166f7b8c3c0a210476fd0dc05013102</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>false</disabled><field>opened_by</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 22:42:23</sys_created_on><sys_id>5166f7b8c3c0a210476fd0dc05013102</sys_id><sys_mod_count>0</sys_mod_count><sys_name>opened_by</sys_name><sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package><sys_policy/><sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope><sys_update_name>sys_ui_policy_action_5166f7b8c3c0a210476fd0dc05013102</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 22:42:23</sys_updated_on><table>x_1584301_bases_users</table><ui_policy display_value="User and State editable for Base Admin">fb36f3b8c3c0a210476fd0dc050131ec</ui_policy><value/><value_action>ignore</value_action><visible>true</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=5166f7b8c3c0a210476fd0dc05013102"/></record_update>]]></payload>
+        <payload_hash>1768505143</payload_hash>
+        <record_name>opened_by</record_name>
+        <reverted_from/>
+        <source>ab126377c3731210476fd0dc0501311c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-28 22:42:23</sys_created_on>
+        <sys_id>a77637b8c3c0a210476fd0dc0501316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1954eb9a1be0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 22:42:23</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>ab7637b8d0c0a2109444485f4cdf106e</update_guid>
+        <update_guid_history>ab7637b8d0c0a2109444485f4cdf106e:1768505143</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:18:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>2c7d7790fed14f14990e33bb06e818c4</sys_id>
+        <sys_metadata>5166f7b8c3c0a210476fd0dc05013102</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>opened_by</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_scope_delete display_value="">0c7f6c8abc044a02b5c722e0c83c7884</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_5166f7b8c3c0a210476fd0dc05013102</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_5166f7b8c3c0a210476fd0dc05013102">a77637b8c3c0a210476fd0dc0501316f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:18:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

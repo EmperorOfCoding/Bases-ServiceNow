@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1584301_bases.basesUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>All Scripting for Bases Application.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>basesUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var basesUtils = Class.create();
+basesUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    userHasActiveSubscription: function() {
+        var userSysId = this.getParameter('sysparm_user');
+
+        gs.debug("[DEBUG] sysparm_user recebido: " + userSysId);
+
+        var gr = new GlideRecord('x_1584301_bases_registrations');
+        gr.addQuery('user', userSysId);
+        gr.addQuery('status', 'active');
+        gr.query();
+
+        if (gr.hasNext()) {
+            gs.debug("[DEBUG] O usuário já possui uma inscrição ativa.");
+            return 'true';
+        } else {
+            gs.debug("[DEBUG] O usuário NÃO possui inscrição ativa.");
+            return 'false';
+        }
+    },
+
+    type: 'basesUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 18:36:02</sys_created_on>
+        <sys_id>27c9a410c3c42210476fd0dc05013189</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>basesUtils</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_script_include_27c9a410c3c42210476fd0dc05013189</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 18:56:05</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>27c9a410c3c42210476fd0dc05013189</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 18:36:02</sys_created_on>
+        <sys_id>a3ea249cc3842210476fd0dc05013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-26 18:36:02</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases ">af126377c3731210476fd0dc05013117</application>
+        <file_path/>
+        <instance_id>56b236671bb08e58c82acb7b234bcba2</instance_id>
+        <instance_name>dev242599</instance_name>
+        <name>sys_script_include_27c9a410c3c42210476fd0dc05013189</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1584301_bases.basesUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;All Scripting for Bases Application.&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;basesUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var basesUtils = Class.create();
+basesUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    userHasActiveSubscription: function() {
+        var userSysId = this.getParameter('sysparm_user');
+
+        gs.debug("[DEBUG] sysparm_user recebido: " + userSysId);
+
+        var gr = new GlideRecord('x_1584301_bases_registrations');
+        gr.addQuery('user', userSysId);
+        gr.addQuery('status', 'active');
+        gr.query();
+
+        if (gr.hasNext()) {
+            gs.debug("[DEBUG] O usuário já possui uma inscrição ativa.");
+            return 'true';
+        } else {
+            gs.debug("[DEBUG] O usuário NÃO possui inscrição ativa.");
+            return 'false';
+        }
+    },
+
+    type: 'basesUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-26 18:36:02&lt;/sys_created_on&gt;&lt;sys_id&gt;27c9a410c3c42210476fd0dc05013189&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;basesUtils&lt;/sys_name&gt;&lt;sys_package display_value="Bases " source="x_1584301_bases"&gt;af126377c3731210476fd0dc05013117&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Bases "&gt;af126377c3731210476fd0dc05013117&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_27c9a410c3c42210476fd0dc05013189&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-27 18:56:05&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;27c9a410c3c42210476fd0dc05013189&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-26 18:36:02&lt;/sys_created_on&gt;&lt;sys_id&gt;a3ea249cc3842210476fd0dc05013103&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-26 18:36:02&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>743568933</payload_hash>
+        <record_name>basesUtils</record_name>
+        <reverted_from/>
+        <source>ab126377c3731210476fd0dc0501311c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 18:56:05</sys_created_on>
+        <sys_id>8f197124c3c42210476fd0dc0501310b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19548c418c70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 18:56:05</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c31971245ec422102b01bd8535ea390b</update_guid>
+        <update_guid_history>c31971245ec422102b01bd8535ea390b:743568933,4f0635ac728422100d38b1bbae193d05:-1700837293,40f2bda884842210e2721d55401b0be9:439633933,99afa9280a84221000d09b583641d699:-1905928715,d50fade463842210ca17ee5fa3cd9d0f:1881861981,56508dd43d0822106f1790b21b229d75:-1988700080,448fb49829082210764ee3eb40fac852:992864065,5993349812c422109828e4cfde105ee7:-1551494776,12333cd8e5c42210ae5fdee1b961f04a:250097142,fb22fc186cc42210e22c0da69cf022de:-999127376,4bf13498e8c42210698450a88bffd5de:-910393745,28e0f018dfc422105ccd1638e2745248:649378749,33fee4d01ec42210f548c30f17a5f3af:-460780155,f1ab249c09842210e593c96f0adc5508:-148872077,bfeae85011c42210646f9b80ed7a44a0:24611108</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 19:01:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>8c42b5f1f554401aaa4ea4518075b504</sys_id>
+        <sys_metadata>27c9a410c3c42210476fd0dc05013189</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>basesUtils</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_scope_delete display_value="">0c7f6c8abc044a02b5c722e0c83c7884</sys_scope_delete>
+        <sys_update_name>sys_script_include_27c9a410c3c42210476fd0dc05013189</sys_update_name>
+        <sys_update_version display_value="sys_script_include_27c9a410c3c42210476fd0dc05013189">8f197124c3c42210476fd0dc0501310b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 19:01:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

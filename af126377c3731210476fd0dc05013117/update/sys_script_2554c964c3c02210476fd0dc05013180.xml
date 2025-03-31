@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1584301_bases_registrations</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Can't Insert existing Base</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	testaSeExisteRegistroMesmoNome = () => {
+		var grName = new GlideRecord("x_1584301_bases_registrations");
+
+		grName.addQuery('name', current.name);
+		grName.addQuery('sys_id', '!=', current.sys_id);
+		grName.query();
+
+		if (grName.hasNext()) {
+
+			gs.addErrorMessage("You can't create a Base with a existing Name!");
+			current.setAbortAction(true);
+		}
+	};
+
+	testaSeExisteRegistroMesmaCidadeEstado = () => {
+		var grCityState = new GlideRecord("x_1584301_bases_registrations");
+
+		grCityState.addQuery('city', current.city);
+		grCityState.addQuery('city_state', current.city_state);
+		grCityState.addQuery('sys_id', '!=', current.sys_id);
+		grCityState.query();
+	
+		if (grCityState.hasNext()) {
+	
+			gs.addErrorMessage("You can't create a Base with a existing City and City State!");
+			current.setAbortAction(true);
+		}
+	};
+
+	testaSeExisteRegistroMesmoNome();
+	testaSeExisteRegistroMesmaCidadeEstado();
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 15:05:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2554c964c3c02210476fd0dc05013180</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Can't Insert existing Base</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_script_2554c964c3c02210476fd0dc05013180</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 20:19:10</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2554c964c3c02210476fd0dc05013180"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>2554c964c3c02210476fd0dc05013180</documentkey>
+        <fieldname>message</fieldname>
+        <language>pb</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 20:11:36</sys_created_on>
+        <sys_id>503a41cfc3906210476fd0dc050131a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 20:11:36</sys_updated_on>
+        <tablename>sys_script</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>2554c964c3c02210476fd0dc05013180</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 15:06:34</sys_created_on>
+        <sys_id>bc9401a4c3c02210476fd0dc05013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 15:06:34</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

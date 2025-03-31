@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated_notification">
+    <sys_translated_notification action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <collection>x_1584301_bases_registrations</collection>
+        <language display_value="Brazilian Portuguese">3be8be2effb30000dada1c57f27f9d0f</language>
+        <message/>
+        <message_html><![CDATA[<p data-end="77" data-start="57"><span style="font-size: 10pt;">Ol&aacute; Administradores,</span></p>
+<p data-end="127" data-start="79"><span style="font-size: 10pt;">A integra&ccedil;&atilde;o para a base: "${base.name}" falhou.</span></p>]]></message_html>
+        <message_text/>
+        <parent display_value="Integration Failed">81c192b1c3886210476fd0dc0501317a</parent>
+        <subject>${number} - Falha na Integração da Base: "${base.name}"</subject>
+        <sys_class_name>sys_translated_notification</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 14:37:22</sys_created_on>
+        <sys_id>ed8da56cc3a02210476fd0dc05013114</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_translated_notification_ed8da56cc3a02210476fd0dc05013114</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 14:41:25</sys_updated_on>
+    </sys_translated_notification>
+</record_update>

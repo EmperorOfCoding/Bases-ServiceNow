@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Join a Base">31dd5300c3402210476fd0dc05013112</catalog_item>
+        <catalog_variable>IO:cb10af40c3402210476fd0dc050131d4</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 13:25:00</sys_created_on>
+        <sys_id>ebb32b84c3402210476fd0dc05013162</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>choose_a_state</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_ebb32b84c3402210476fd0dc05013162</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-02-26 18:41:26</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Base and Function Selection are Mandatory.">8b83abc4c3402210476fd0dc050131e0</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>choose_a_state</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=ebb32b84c3402210476fd0dc05013162"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases ">af126377c3731210476fd0dc05013117</application>
+        <file_path/>
+        <instance_id>56b236671bb08e58c82acb7b234bcba2</instance_id>
+        <instance_name>dev242599</instance_name>
+        <name>catalog_ui_policy_action_ebb32b84c3402210476fd0dc05013162</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Join a Base">31dd5300c3402210476fd0dc05013112</catalog_item><catalog_variable>IO:cb10af40c3402210476fd0dc050131d4</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-26 13:25:00</sys_created_on><sys_id>ebb32b84c3402210476fd0dc05013162</sys_id><sys_mod_count>3</sys_mod_count><sys_name>choose_a_state</sys_name><sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package><sys_policy/><sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope><sys_update_name>catalog_ui_policy_action_ebb32b84c3402210476fd0dc05013162</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2025-02-26 18:41:26</sys_updated_on><table/><ui_policy display_value="Base and Function Selection are Mandatory.">8b83abc4c3402210476fd0dc050131e0</ui_policy><value/><value_action>ignore</value_action><variable>choose_a_state</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=ebb32b84c3402210476fd0dc05013162"/></record_update>]]></payload>
+        <payload_hash>-879741874</payload_hash>
+        <record_name>choose_a_state</record_name>
+        <reverted_from/>
+        <source>ab126377c3731210476fd0dc0501311c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-02-26 18:41:27</sys_created_on>
+        <sys_id>362ca0d0c3c42210476fd0dc050131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195439054a20000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-02-26 18:41:27</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>fa2ca0d0a5c4221008a0fc17fda028f7</update_guid>
+        <update_guid_history>fa2ca0d0a5c4221008a0fc17fda028f7:-879741874,e9746458b4842210a32980fb11ffbd23:-1426198194,d654a05875842210551bf54f95fd4406:1221917788,67b3efc499402210b120da5a89e0204d:-1769192658</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="choose_a_state">d3d74154c3482210476fd0dc050131ae</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-02-26 20:42:26</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>6366870233804608ae58ab559639d240</sys_id>
+        <sys_metadata>ebb32b84c3402210476fd0dc05013162</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>choose_a_state</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_scope_delete display_value="">0c7f6c8abc044a02b5c722e0c83c7884</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_ebb32b84c3402210476fd0dc05013162</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_ebb32b84c3402210476fd0dc05013162">362ca0d0c3c42210476fd0dc050131f8</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-02-26 20:42:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
