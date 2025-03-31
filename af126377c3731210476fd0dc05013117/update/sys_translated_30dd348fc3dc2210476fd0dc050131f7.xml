@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>title</element>
+        <id/>
+        <label>Aplicação Locais de Trabalho</label>
+        <language>pb</language>
+        <name>sys_app_application</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 19:17:34</sys_created_on>
+        <sys_id>30dd348fc3dc2210476fd0dc050131f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Aplicação Locais de Trabalho</sys_name>
+        <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
+        <sys_update_name>sys_translated_30dd348fc3dc2210476fd0dc050131f7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 19:18:41</sys_updated_on>
+        <value>Bases Application</value>
+    </sys_translated>
+</record_update>

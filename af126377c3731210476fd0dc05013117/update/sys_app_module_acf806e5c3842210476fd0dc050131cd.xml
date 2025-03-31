@@ -15,7 +15,7 @@
         <name/>
         <order>100</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>https://dev242599.service-now.com/now/platform-analytics-workspace/dashboards/params/edit/true/tab-sys-id/c6d70e65c3842210476fd0dc0501312d/sys-id/20fd3961c3442210476fd0dc05013192</query>
+        <query>https://dev242599.service-now.com/now/platform-analytics-workspace/dashboards/params/edit/false/sys-id/20fd3961c3442210476fd0dc05013192</query>
         <report/>
         <require_confirmation>true</require_confirmation>
         <roles>x_1584301_bases.admin</roles>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>acf806e5c3842210476fd0dc050131cd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Relevant Information for Admin</sys_name>
         <sys_overrides/>
         <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
@@ -33,11 +33,11 @@
         <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
         <sys_update_name>sys_app_module_acf806e5c3842210476fd0dc050131cd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 22:40:10</sys_updated_on>
+        <sys_updated_on>2025-03-19 19:19:28</sys_updated_on>
         <timeline_page/>
         <title>Relevant Information for Admin</title>
         <uncancelable>false</uncancelable>
         <view_name/>
-        <window_name/>
+        <window_name>Relevant Information for Admin</window_name>
     </sys_app_module>
 </record_update>

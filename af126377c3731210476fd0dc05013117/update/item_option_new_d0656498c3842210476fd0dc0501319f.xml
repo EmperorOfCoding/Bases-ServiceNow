@@ -58,8 +58,10 @@
         <record/>
         <record_producer_table>x_1584301_bases_users</record_producer_table>
         <reference>x_1584301_bases_functions</reference>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>name!=Base Manager^EQ</reference_qual>
+        <reference_qual_condition table="x_1584301_bases_functions">name!=Base Manager^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="!=" or="false" value="Base Manager"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -79,14 +81,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 18:27:43</sys_created_on>
         <sys_id>d0656498c3842210476fd0dc0501319f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Choose a Function</sys_name>
         <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
         <sys_policy/>
         <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
         <sys_update_name>item_option_new_d0656498c3842210476fd0dc0501319f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-28 12:53:40</sys_updated_on>
+        <sys_updated_on>2025-03-24 14:43:12</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -107,6 +109,58 @@
         <write_roles/>
     </item_option_new>
     <sys_translated_text action="delete_multiple" query="documentkey=d0656498c3842210476fd0dc0501319f"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>d0656498c3842210476fd0dc0501319f</documentkey>
+        <fieldname>conversational_label</fieldname>
+        <language>pb</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 14:43:13</sys_created_on>
+        <sys_id>76fee1a0c3e02210476fd0dc0501315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 14:43:13</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>d0656498c3842210476fd0dc0501319f</documentkey>
+        <fieldname>help_text</fieldname>
+        <language>pb</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 14:43:13</sys_created_on>
+        <sys_id>b2fee1a0c3e02210476fd0dc05013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 14:43:13</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>d0656498c3842210476fd0dc0501319f</documentkey>
+        <fieldname>instructions</fieldname>
+        <language>pb</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 14:43:13</sys_created_on>
+        <sys_id>f2fee1a0c3e02210476fd0dc05013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 14:43:13</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>d0656498c3842210476fd0dc0501319f</documentkey>
+        <fieldname>rich_text</fieldname>
+        <language>pb</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 14:43:13</sys_created_on>
+        <sys_id>f6fee1a0c3e02210476fd0dc05013160</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 14:43:13</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
+    </sys_translated_text>
     <fx_price action="delete_multiple" query="id=d0656498c3842210476fd0dc0501319f"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>

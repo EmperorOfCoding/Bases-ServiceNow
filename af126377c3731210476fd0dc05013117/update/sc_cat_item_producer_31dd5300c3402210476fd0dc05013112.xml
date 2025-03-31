@@ -89,14 +89,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 13:00:57</sys_created_on>
         <sys_id>31dd5300c3402210476fd0dc05013112</sys_id>
-        <sys_mod_count>113</sys_mod_count>
+        <sys_mod_count>116</sys_mod_count>
         <sys_name>Join a Base</sys_name>
         <sys_package display_value="Bases " source="x_1584301_bases">af126377c3731210476fd0dc05013117</sys_package>
         <sys_policy/>
         <sys_scope display_value="Bases ">af126377c3731210476fd0dc05013117</sys_scope>
         <sys_update_name>sc_cat_item_producer_31dd5300c3402210476fd0dc05013112</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-02-28 19:44:48</sys_updated_on>
+        <sys_updated_on>2025-03-24 14:43:13</sys_updated_on>
         <table_name>x_1584301_bases_users</table_name>
         <taxonomy_topic/>
         <template/>
@@ -104,7 +104,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>113</version>
+        <version>116</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
@@ -112,6 +112,45 @@
         <workflow/>
     </sc_cat_item_producer>
     <sys_translated_text action="delete_multiple" query="documentkey=31dd5300c3402210476fd0dc05013112"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>31dd5300c3402210476fd0dc05013112</documentkey>
+        <fieldname>description</fieldname>
+        <language>pb</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 14:43:13</sys_created_on>
+        <sys_id>eafee1a0c3e02210476fd0dc05013144</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 14:43:13</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>31dd5300c3402210476fd0dc05013112</documentkey>
+        <fieldname>name</fieldname>
+        <language>pb</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-21 19:38:37</sys_created_on>
+        <sys_id>24d59f27c3502210476fd0dc050131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-21 19:38:37</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Increva-se em uma Base</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>31dd5300c3402210476fd0dc05013112</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>pb</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 14:43:13</sys_created_on>
+        <sys_id>2afee1a0c3e02210476fd0dc05013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 14:43:13</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>User can select a base that he wants to join and his function.</value>
+    </sys_translated_text>
     <fx_price action="delete_multiple" query="id=31dd5300c3402210476fd0dc05013112"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
